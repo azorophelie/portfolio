@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
-
- // Assure-toi que le chemin est correct
-
  const Header = () => {
-    const [showName, setShowName] = useState(true);
+    const [showName, setShowName] = useState(true); // État pour afficher ou masquer le nom
+    const [darkMode, setDarkMode] = useState(false); // État pour gèrer le mode sombre
   
+    // Utilisation de useEffect pour alterner l'affichage du nom toutes les 5 secondes
     useEffect(() => {
       const interval = setInterval(() => {
         setShowName(prev => !prev);
-      }, 5000); // Change toutes les 5 secondes, ajuste si nécessaire
+      }, 5000); 
   
       return () => clearInterval(interval);
     }, []);
+
+     // Fonction pour basculer entre le mode sombre et le mode clair
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('dark-mode', !darkMode);
+    document.body.classList.toggle('light-mode', darkMode);
+  };
    // Fonction pour créer des spans avec une animation pour chaque lettre
    const getAnimatedLetters = (text) => {
     return text.split('').map((letter, index) => (
@@ -36,12 +41,15 @@ import { NavLink } from 'react-router-dom';
     <header className="header">
         
       <nav className="navbar">
-        <div className='name-logo'>
+        <div className='name-mode'>
       <div className={`name ${showName ? 'show-name' : 'hide-name'}`}>
           {getAnimatedLetters('Ophélie Azor')}
           
         </div>
-       
+          {/* Bouton pour basculer vers le mode sombre ou clair */}
+          <button onClick={toggleDarkMode} className={`dark-mode-toggle ${darkMode ? 'dark-mode-toggle' : 'light-mode-toggle'}`}>
+            {darkMode ? '☀️' : '🌙'}
+          </button>
         </div>
         <ul className="navLinks">
           <li>
