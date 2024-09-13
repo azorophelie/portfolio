@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Cedarville+Cursive&family=Great+Vibes&family=Playwrite+CU:wght@100..400&display=swap");
+/* src/components/style/_header.scss */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 80vw;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.name-logo {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-family: "Allura", cursive; /* Utilise une police manuscrite */
+  font-size: 24px;
+  font-style: italic;
+  margin-right: 15px;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navLinks {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+
+.navLinks li {
+  margin: 0 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  position: relative; /* Nécessaire pour l'effet de la sous-ligne animée */
+  padding-bottom: 5px; /* Espace sous le texte pour la sous-ligne */
+  transition: color 0.3s ease-in-out; /* Animation pour la couleur du texte */
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  width: 0; /* Initialement à 0 pour être animé */
+  height: 2px; /* Épaisseur de la sous-ligne */
+  background-color: #ff6347; /* Couleur de la sous-ligne */
+  bottom: 0; /* Position de la sous-ligne */
+  left: 0; /* Commence depuis la gauche */
+  transition: width 0.3s ease-in-out; /* Transition animée de la largeur */
+}
+
+.navLinks a:hover {
+  color: #ff6347; /* Change la couleur du texte lors du survol */
+}
+
+.navLinks a:hover::after {
+  width: 100%;
+}
+
+.active {
+  color: #ff6347;
+  text-decoration: none;
+  border-bottom: 2px solid #ff6347; /* Ajoute une ligne en bas du texte au lieu du soulignement */
+  transition: border-bottom 0.3s ease-in-out; /* Effet de transition pour la ligne */
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-1px); /* Déplacement vers la gauche */
+  animation: fadeInOut 5s ease-in-out infinite;
+}
+
+.show-name .letter {
+  opacity: 1;
+  animation: fadeInLetter 0.5s forwards;
+}
+
+.name .space {
+  display: inline-block;
+  width: 0.3rem; /* Ajuste la largeur si nécessaire */
+  animation: none; /* Pas besoin d'animation pour les espaces */
+}/*# sourceMappingURL=main.css.map */
