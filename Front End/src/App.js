@@ -1,10 +1,11 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router } from 'react-router-dom'; 
 
 
 import Header from './components/Header';
 import Presentation from './components/Presentation';
+import Skills from './components/Skills';
 
 
 
@@ -16,10 +17,12 @@ const App = () => {
     <Router>
       <Header />
       <Presentation />
+      <hr className="separator"></hr>
+      <Skills />
      
-      <Routes>
+    
       
-      </Routes>
+      
      
     </Router>
   );

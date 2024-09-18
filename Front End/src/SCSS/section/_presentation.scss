@@ -106,3 +106,11 @@ h2 {
   .dark-mode .presentation h2:after {
     background-color: #777; 
 }
+
+
+.separator {
+  border: none;
+  border-top: 2px solid #a567a2;  /* Trait rose de 2px d'épaisseur */
+                  /* Le trait occupe 50% de la largeur */
+  margin: 20px auto;           /* Centrer le trait et espacer */
+}

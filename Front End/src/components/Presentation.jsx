@@ -24,13 +24,13 @@ const Presentation = () => {
       </div>
      
     </div>
-    <div className='presentation'>
+    <section className='presentation'>
     <h2>Présentation</h2>
     <p>{presentationData.presentation.name}</p>
     <p>{presentationData.presentation.age}</p>
     <p>{presentationData.presentation.background}</p>
     <p>{presentationData.presentation.mission}</p>
-     </div>
+     </section>
      </div>
   );
 };
