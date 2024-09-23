@@ -3,8 +3,9 @@
     flex-direction: column; 
     justify-content: center;
     align-items: center;     
-    height: 40vh;           
-    text-align: center;      
+    height: 40vh;    
+    width: 65vw;   
+    margin: auto;    
     padding: 0 20px;        
     box-sizing: border-box; 
     background-color: #e6d4db; 
@@ -71,14 +72,13 @@ font-size: 40px;
     white-space: pre-wrap;
 }
 
-/* Style pour le titre */
+
 h2 {
     position: relative;
     display: inline-block;
     margin-bottom: 20px;
   }
   
-  /* Style pour la barre */
   h2::after {
     content: '';
     position: absolute;
@@ -91,7 +91,6 @@ h2 {
     animation: slideInOut 3s linear infinite; /* Animation de la barre */
   }
   
-  /* Définition de l'animation */
   @keyframes slideInOut {
     0% {
       transform: translateX(-50%); /* La barre commence à gauche */
@@ -103,14 +102,11 @@ h2 {
       transform: translateX(-50%); /* La barre revient à gauche */
     }
   }
-  .dark-mode .presentation h2:after {
-    background-color: #777; 
-}
+  
 
 
 .separator {
   border: none;
-  border-top: 2px solid #a567a2;  /* Trait rose de 2px d'épaisseur */
-                  /* Le trait occupe 50% de la largeur */
-  margin: 20px auto;           /* Centrer le trait et espacer */
+  border-top: 2px solid #a567a2;  
+  margin: 20px auto;           
 }

@@ -5,7 +5,75 @@
       "age": "26 ans",
       "background": "Après avoir suivi une formation d'intégrateur web pendant 2 mois, dont 1 mois en entreprise, j'ai renforcé mes compétences avec une formation de 8 mois en développement web. \n\nCette double expérience m'a permis d'acquérir une solide compréhension des principes de conception web et de développement, me préparant à relever \ndes défis variés dans le domaine du web.",
       "mission": "Mon parcours m'a non seulement appris à maîtriser les outils et technologies du développement web, mais aussi à adopter une approche  méthodique et agile dans la gestion de projets. \n\nJe suis désormais prêt à mettre en pratique ces connaissances pour contribuer à des projets innovants et stimulants."
+    },
+   
+      "skills": {
+        "frontEnd": [
+          {
+            "icon": "fab fa-html5",
+            "title": "HTML5",
+            "description": "Maîtrise des balises HTML, structuration du contenu, optimisation pour le SEO."
+          },
+          {
+            "icon": "fab fa-css3-alt",
+            "title": "CSS3",
+            "description": "Création de mises en page responsive, animations et transitions."
+          },
+          {
+            "icon": "fab fa-js",
+            "title": "JavaScript",
+            "description": "Programmation côté client, manipulation du DOM, gestion des événements."
+          },
+          {
+            "icon": "fab fa-react",
+            "title": "React",
+            "description": "Création de composants réutilisables, gestion de l'état avec hooks."
+          }
+        ],
+        "backEnd": [
+          {
+            "icon": "fab fa-node-js",
+            "title": "Node.js",
+            "description": "Développement côté serveur avec JavaScript, gestion des requêtes HTTP."
+          },
+          {
+            "icon": "fas fa-server",
+            "title": "Express",
+            "description": "Framework pour Node.js pour créer des APIs et gérer les routes."
+          },
+          {
+            "icon": "fas fa-database",
+            "title": "Bases de Données",
+            "description": "SQL, NoSQL, gestion des données et intégration avec les applications."
+          },
+          {
+            "icon": "fas fa-plug",
+            "title": "APIs REST",
+            "description": "Création et gestion des APIs RESTful pour la communication entre services."
+          }
+        ],
+        "tools": [
+          {
+            "icon": "fab fa-github",
+            "title": "GitHub",
+            "description": "Gestion de versions et collaboration sur les projets de développement."
+          },
+          {
+            "icon": "fab fa-js",
+            "title": "VSCode",
+            "description": "Environnement de développement intégré pour le code."
+          },
+          {
+            "icon": "fab fa-figma",
+            "title": "Figma",
+            "description": "Outil de conception d'interface utilisateur et prototypage."
+          },
+          {
+            "icon": "fab fa-trello",
+            "title": "Trello",
+            "description": "Outil de gestion de projets et de tâches."
+          }
+        ]
+      }
     }
-  }
-  
-  
+    
