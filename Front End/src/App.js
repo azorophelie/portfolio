@@ -14,16 +14,15 @@ import './SCSS/main.scss';
 
 const App = () => {
   return (
-    <Router>
+    <Router> 
       <Header />
-      <Presentation />
-      <hr className="separator"></hr>
-      <Skills />
-     
-    
-      
-      
-     
+            <section id="presentation">
+                <Presentation />
+            </section>
+            <hr className="separator"></hr>
+            <section id="competences">
+                <Skills />
+            </section>
     </Router>
   );
 };

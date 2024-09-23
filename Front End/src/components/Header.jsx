@@ -52,16 +52,14 @@ import { NavLink } from 'react-router-dom';
           </button>
         </div>
         <ul className="navLinks">
-          <li>
-            <NavLink to="/presentation" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Présentation
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/competences" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Mes Compétences
-            </NavLink>
-          </li>
+       
+                <li>
+                    <a href="#presentation" className="lien-header">Présentation</a>
+                </li>
+                <li>
+                    <a href="#competences" className="lien-header">Mes Compétences</a>
+                </li>
+            
           <li>
             <NavLink to="/projets" className={({ isActive }) => (isActive ? 'active' : '')}>
               Mes Projets
