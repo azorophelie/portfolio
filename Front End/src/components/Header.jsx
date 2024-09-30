@@ -15,11 +15,17 @@ import { NavLink } from 'react-router-dom';
     }, []);
 
      // Fonction pour basculer entre le mode sombre et le mode clair
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode', !darkMode);
-    document.body.classList.toggle('light-mode', darkMode);
-  };
+     const toggleDarkMode = () => {
+      setDarkMode(!darkMode);
+      if (!darkMode) {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+      } else {
+        document.body.classList.add('light-mode');
+        document.body.classList.remove('dark-mode');
+      }
+    };
+    
    // Fonction pour créer des spans avec une animation pour chaque lettre
    const getAnimatedLetters = (text) => {
     return text.split('').map((letter, index) => (
@@ -60,11 +66,9 @@ import { NavLink } from 'react-router-dom';
                     <a href="#competences" className="lien-header">Mes Compétences</a>
                 </li>
             
-          <li>
-            <NavLink to="/projets" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Mes Projets
-            </NavLink>
-          </li>
+                <li>
+                    <a href="#projects" className="lien-header">Mes Projets</a>
+                </li>
           <li>
             <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
               Contact

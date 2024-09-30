@@ -73,7 +73,81 @@
             "title": "Trello",
             "description": "Outil de gestion de projets et de tâches."
           }
-        ]
+        ],
+       
+         "projects": [
+        {
+            "title": "Booki",
+            "description": "\nSite web développé pour une agence de voyage, conçu pour faciliter la réservation d'hébergements et d'activités dans la ville de choix des utilisateurs. \n",
+           "problems": [
+    "\n• Intégration d'une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
+   ],
+            "solutions": "\n• Écriture de code HTML et CSS personnalisé en suivant les maquettes \n• collaboration étroite avec l’UI designer.",
+            "skillsDeveloped": "\nHTML, CSS, design responsive, versionnement avec Git.\n\n",
+            "github": "https://github.com/azorophelie/OpenClassrooms-Projet-2",
+            "githubPages": "https://azorophelie.github.io/OpenClassrooms-Projet-2/",
+            "spaceAfterskillsDeveloped": true 
+        },
+        {
+            "title": "Bluel",
+            "description": "\nSite portfolio pour une architecte d'intèrieur .\n\n",
+            "problems": [
+                "\n• Difficulté à récupérer les travaux de l'architecte à partir du back-end en utilisant l'API.",
+                "\n• Les travaux ne s'affichent pas dynamiquement sur la galerie.",
+                "\n• Difficulté à supprimer des travaux du site sans recharger la page."
+            ],
+         "solutions": [ "\n• Utiliser `fetch` pour faire une requête GET et récupérer les données.",
+         "\n• Générer dynamiquement les éléments HTML après récupération des données.",
+         "\n• Envoyer une requête DELETE à l'API et mettre à jour le DOM en conséquence."
+          ],
+            "skillsDeveloped": "\nJavaScript, gestion du DOM, utilisation des API REST, travail avec Figma.",
+            "github": "https://github.com/azorophelie/OpenClassrooms-Projet-3",
+            "githubPages": "https://username.github.io/repository2"
+        },
+        {
+          "title": "Kasa",
+          "description": "\nRefonte du site Kasa, une entreprise de location d’appartements entre particuliers, visant à passer d'une architecture ASP.NET à une stack JavaScript avec NodeJS et React.",
+          "problems": [
+            "\n• Difficulté à gérer les données des annonces.",
+            "\n• Navigation complexe entre les différentes pages.",
+            "\n• Difficulté à appliquer un design responsive."
+        ],
+          "solutions": [
+        "\n• Utiliser React pour gérer l'état et les données.",
+        "\n• Configurer React Router pour une navigation fluide.",
+        "\n• Appliquer des styles responsives avec CSS."
+    ],
+        
+          "skillsDeveloped": "\nJavaScript, React, React Router, Sass.\n\n\n\n",
+          "github": "https://github.com/username/repository3",
+          "githubPages": "https://username.github.io/repository3"
+      },
+      {
+          "title": "Mon Vieux Grimoire",
+          "description": "\nSite web de notation de livres pour la chaîne de librairies 'Le Vieux Grimoire'. Permet aux utilisateurs d'ajouter des livres et de laisser des notes, tout en optimisant les images pour une expérience utilisateur fluide.",
+
+          "problems": [
+            "\n• Créer un serveur back-end pour gérer l'ajout et la notation des livres.",
+            "\n• Assurer la sécurité des données et l'authentification des utilisateurs.",
+            "\n• Gérer le téléchargement et l'optimisation des images pour le site, tout en respectant les bonnes pratiques du Green Code."
+          ],
+          "solutions": [
+          "\n• Utiliser Express pour développer le serveur et le connecter à MongoDB pour stocker les données.",
+          "\n• Implémenter des opérations CRUD pour gérer les livres et les notations.",
+          "\n• Mettre en place un système d'authentification sécurisé avec des tokens.",
+          "\n• Optimiser les images téléchargées pour réduire l'empreinte écologique du site."
+          ],
+          "skillsDeveloped": "\nNode.js, Express, MongoDB, Mongoose, gestion des opérations CRUD, sécurisation des données, optimisation des images, architecture MVC.\n\n\n",
+          "github": "https://github.com/azorophelie/OpenClassrooms_Projet_6",
+          "githubPages": "https://username.github.io/repository3"
       }
-    }
+  ]
+      
+    
+}
+}
+
+      
+      
+    
     
