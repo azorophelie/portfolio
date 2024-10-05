@@ -10,7 +10,7 @@ body.dark-mode {
   .dark-mode .header {
     color: #ffffff;
   }
-  
+ 
   .dark-mode-toggle {
     background-color: transparent;
     border: none;
@@ -20,7 +20,9 @@ body.dark-mode {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
     border: 2px solid transparent;
     border-radius: 8px; 
+    color: white;
   }
+  
   
   .dark-mode-toggle:hover {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8); 
@@ -55,6 +57,7 @@ body.dark-mode {
   .light-mode-toggle {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
     transition: box-shadow 0.3s ease, transform 0.1s ease;
+    color: black;
   }
   
   .light-mode-toggle:hover {

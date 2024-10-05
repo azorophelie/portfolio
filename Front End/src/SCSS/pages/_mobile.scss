@@ -1,0 +1,62 @@
+@media (min-width: 320px) and (max-width: 767.98px) { 
+    .burger-icon {
+        display: flex;
+        position: fixed;
+        right: 20px; // Afficher le burger uniquement sur mobile
+      }
+    
+      .navLinks {
+        display: flex; // Le menu sera caché hors écran par défaut
+      }
+      .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%; // Par défaut, hors de l'écran à droite
+        height: 100vh;
+        width: 60%; // Taille du menu sur mobile
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+      
+        li {
+          margin: 20px 0;
+          font-family: 'Montserrat', sans-serif;
+        }
+      
+        a {
+          text-decoration: none;
+          color: #333;
+          font-size: 18px;
+          position: relative;
+          padding-bottom: 5px;
+          transition: color 0.3s ease-in-out;
+        }
+      
+        &.open {
+          right: 0; // Quand le menu est ouvert
+        }
+      }
+
+      .introduction {
+        width: 100vw; /* Utilise toute la largeur de la page */
+        margin: 0;    /* Enlève les marges pour un alignement parfait */
+        padding: 0;   /* Enlève le padding pour un plein écran */
+    }
+
+    .introduction h1 {
+        white-space: preline;
+        text-align: center;
+    }
+
+    .presentation  {
+        width: 80vw;
+    }
+    }
+    
