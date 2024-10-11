@@ -1,0 +1,30 @@
+.footer {
+    background-color: #e6d4db ;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .footer-icons {
+    margin-top: 10px;
+  }
+  
+  .footer-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #a567a2;
+  }
+  
+  .footer-icon:hover {
+    color: #b997b8; /* Couleur lors du hover */
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .copyright {
+    padding-top: 10px;
+  }

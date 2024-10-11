@@ -101,8 +101,7 @@
          "\n• Envoyer une requête DELETE à l'API et mettre à jour le DOM en conséquence."
           ],
             "skillsDeveloped": "\nJavaScript, gestion du DOM, utilisation des API REST, travail avec Figma.",
-            "github": "https://github.com/azorophelie/OpenClassrooms-Projet-3",
-            "githubPages": "https://username.github.io/repository2"
+            "github": "https://github.com/azorophelie/OpenClassrooms-Projet-3"
         },
         {
           "title": "Kasa",
@@ -138,8 +137,7 @@
           "\n• Optimiser les images téléchargées pour réduire l'empreinte écologique du site."
           ],
           "skillsDeveloped": "\nNode.js, Express, MongoDB, Mongoose, gestion des opérations CRUD, sécurisation des données, optimisation des images, architecture MVC.\n\n\n",
-          "github": "https://github.com/azorophelie/OpenClassrooms_Projet_6",
-          "githubPages": "https://username.github.io/repository3"
+          "github": "https://github.com/azorophelie/OpenClassrooms_Projet_6"
       }
   ]
       

@@ -58,5 +58,22 @@
     .presentation  {
         width: 80vw;
     }
+    .front-back-container {
+      flex-direction: column; /* Empile les sections Front-End et Back-End verticalement */
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
+      gap: 10px;
+      
+  }
+
+  // Projets
+  .project-card  {
+    
+    width: 100%;
+  }
+  
     }
     

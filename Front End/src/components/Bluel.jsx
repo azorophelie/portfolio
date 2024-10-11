@@ -1,40 +1,31 @@
-import React from 'react';
-import Bluelimage from '../images/Bluel_Projet_3.webp';
-import BluelVideo from '../Video/Bluel_vid.mp4';
+// src/components/Bluel.jsx
+import React from "react";
+import Bluelimage from "../images/Bluel_Projet_3.webp";
+import BluelVideo from "../Video/Bluel_vid.mp4";
+import ProjectCard from "./Project";
+
 const images = {
-  'Bluel': Bluelimage,
-  
+  Bluel: Bluelimage,
 };
 
 const Bluel = ({ projects, onProjectClick }) => {
   return (
-   
-      <div className="projects-container">
-        {projects.length > 0 ? (
-          projects
-            .filter(project => project.title === 'Bluel') 
-            .map((project, index) => (
-              <div
+    <div className="projects-container">
+      {projects.length > 0 ? (
+        projects
+          .filter((project) => project.title === "Bluel")
+          .map((project, index) => (
+            <ProjectCard
               key={index}
-              className="project-card"
-              onClick={() => {
-                const video = BluelVideo;
-                console.log('Bluel video:', video);
-                onProjectClick({ ...project, video });
-              }}
-            >
-              <img
-                src={images[project.title] || 'chemin/vers/image/par_defaut.webp'}
-                alt={project.title}
-                className="project-image"
-              />
-            </div>
-            ))
-        ) : (
-          <p>Aucun projet disponible.</p> 
-        )}
-      </div>
-    
+              project={{ ...project, video: BluelVideo }}
+              onProjectClick={onProjectClick}
+              image={images[project.title]}
+            />
+          ))
+      ) : (
+        <p>Aucun projet disponible.</p>
+      )}
+    </div>
   );
 };
 
