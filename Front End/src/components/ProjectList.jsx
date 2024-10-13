@@ -1,7 +1,7 @@
-// src/components/ProjectCard.jsx
+// src/components/ProjectList.jsx
 import React from "react";
 
-const ProjectCard = ({ project, onProjectClick, image }) => {
+const ProjectList = ({ project, onProjectClick, image }) => {
   return (
     <div
       className="project-card"
@@ -16,4 +16,4 @@ const ProjectCard = ({ project, onProjectClick, image }) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectList;

@@ -79,11 +79,11 @@ body.dark-mode .navLinks a:hover {
 }
 
 // Présentation 
-.dark-mode .buttons-intro button {
+.dark-mode .intro-btn button {
   background-color: #555;
 }
   
-.dark-mode .buttons-intro button:hover {
+.dark-mode .intro-btn button:hover {
   background-color: #777; 
 }
 
@@ -191,10 +191,37 @@ body.dark-mode .navLinks a:hover {
   color: #f5f5f5; 
 }
 
-.dark-mode .footer-icon {
+.dark-mode .footer-icon, .dark-mode .arrow {
   color: #555;
 }
 
-.dark-mode .footer-icon:hover {
+.dark-mode .footer-icon:hover,
+.dark-mode .arrow:hover {
   color: #777;
 }
+// Bouton revenir vers le haut
+.dark-mode .scroll {
+  background-color: #2e2e2e;
+  color: #555;
+  box-shadow: 0 8px 16px rgba(85, 85, 85, 0.3);
+}
+
+.dark-mode .scroll:hover, .dark-mode .formation-btn:hover {
+  background-color: #777;
+}
+
+// Sections pour les formations et expériences
+.dark-mode .accordion-title {
+  background-color: #2e2e2e;
+}
+
+.dark-mode .accordion-content {
+  background-color:  #3a3a3a ;
+}
+
+.dark-mode .formation-btn {
+  background-color: #555;
+}
+
+
+

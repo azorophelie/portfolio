@@ -1,6 +1,6 @@
 /* src/SCSS/section/d_presentation.scss */
 
-// Fond avec introduction et boutons de navigation
+// Styles pour l'introduction et les boutons
 .introduction {
   display: flex;
   flex-direction: column; 
@@ -27,11 +27,11 @@
   margin-top: 0;           
 }
 
-.buttons-intro {
+.intro-btn {
   margin-top: 20px;
 }
 
-.buttons-intro button {
+.intro-btn button {
   background-color: #a567a2;
   color: white;
   border: none;
@@ -44,13 +44,7 @@
   align-items: center;
 }
 
-.buttons-intro .icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
-.buttons-intro button:hover {
+.intro-btn button:hover {
     background-color: #b997b8;
 }
 
@@ -118,8 +112,120 @@ h2::after {
 .separator {
   border: none;
   border-top: 2px solid #a567a2;  
-  margin: 20px auto;   
+  margin-top: 10px;   
   width: 65vw;        
 }
 
+// Styles pour les accordéons de formations et d'expériences
+.accordions-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  width: 100%;
+  margin-top: 30px;
+}
 
+.accordions-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 65vw; 
+}
+
+.accordion {
+  width: 50%; 
+}
+
+.accordion h3 {
+  text-align: center;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-20px); 
+  transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+  background-color: #f6f6f6;
+}
+
+.accordion-content.open {
+  max-height: 500px; 
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+.accordion-content p {
+  padding-left: 20px;
+}
+
+.formation-btn {
+  margin-top: 10px;
+  background-color: #a567a2;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #b997b8;
+}
+
+.arrow {
+  transition: transform 0.6s ease-in-out;
+  color: #a567a2;
+  font-size: 25px;
+  padding: 15px;
+  transform: rotate(0deg); 
+}
+
+.arrow.open {
+  transform: rotate(180deg); 
+}
+
+.arrow:hover {
+  color: #b997b8;
+}
+
+//Animation pour l'ouverture
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animation pour la fermeture
+@keyframes slideFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

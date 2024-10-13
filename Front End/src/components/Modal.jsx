@@ -34,18 +34,18 @@ const Modal = ({ isOpen, onClose, project }) => {
         {/* Section avec les détails du projet, divisée en deux colonnes */}
         <div className="modal-details">
           <div className="modal-column">
-            <p className="modal-subtitle">Description:</p>
-            <p className="left-align">{project.description}</p>
+            <p className="modal-description">Description:</p>
+            <p className="text-modal">{project.description}</p>
 
-            <p className="modal-subtitle">Problématiques:</p>
-            <p className="left-align">{project.problems}</p>
+            <p className="modal-description">Problématiques:</p>
+            <p className="text-modal">{project.problems}</p>
           </div>
           <div className="modal-column">
-            <p className="modal-subtitle">Compétences développées:</p>
-            <p className="left-align">{project.skillsDeveloped}</p>
+            <p className="modal-description">Compétences développées:</p>
+            <p className="text-modal">{project.skillsDeveloped}</p>
 
-            <p className="modal-subtitle">Solutions:</p>
-            <p className="left-align">{project.solutions}</p>
+            <p className="modal-description">Solutions:</p>
+            <p className="text-modal">{project.solutions}</p>
           </div>
         </div>
         {/* Boutons permettant de consulter le code GitHub ou la page GitHub du projet */}

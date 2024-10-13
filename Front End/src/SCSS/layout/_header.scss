@@ -6,6 +6,17 @@ body {
   font-family: "Montserrat",sans-serif;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 100vw; /* Assurer que tout soit aligné au centre */
+  box-sizing: border-box;
+}
+
 // Animation pour faire apparaître et disparaître le nom et prénom
 @keyframes fadeInOut {
   0%, 100% {
@@ -160,6 +171,24 @@ body {
   }
 }
 
+/* ScrollToTopButton.css */
+.scroll {
+  position: fixed;
+  bottom: 40px; 
+  right: 20px;  
+  background-color: #f0f0f0;
+  color: #a567a2;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-
+.scroll:hover {
+  background-color: #b997b8; 
+}
 

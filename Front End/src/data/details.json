@@ -6,6 +6,34 @@
       "background": "Après avoir suivi une formation d'intégrateur web pendant 2 mois, dont 1 mois en entreprise, j'ai renforcé mes compétences avec une formation de 8 mois en développement web. \n\nCette double expérience m'a permis d'acquérir une solide compréhension des principes de conception web et de développement, me préparant à relever \ndes défis variés dans le domaine du web.",
       "mission": "Mon parcours m'a non seulement appris à maîtriser les outils et technologies du développement web, mais aussi à adopter une approche  méthodique et agile dans la gestion de projets. \n\nJe suis désormais prêt à mettre en pratique ces connaissances pour contribuer à des projets innovants et stimulants."
     },
+    "formations": [
+      {
+        "title": "Développeur Intégrateur d'Applications Web",
+        "location": "Valenciennes, Hauts-de-France", 
+        "year": "Du 12 Avril 2023 au 5 Juin 2023",
+        "description": "Cette formation de préqualification a pour objectif de découvrir les métiers liés à l’intégration web et d’initier le développement des compétences nécessaires à la réalisation des principales activités de le⋅a développeur·se intégrateur·rice. ",
+      "duration": "3 mois",
+        "link": "https://hautsdefrance.simplon.co/session/developpeur-se-intégrateur-rice-p8/1801"
+      },
+      {
+        "title": "Développeur Web",
+        "location": "Valenciennes, Hauts-de-France",
+        "year": "Du 19 Mars 2024 au 18 Novembre 2024",
+        "description": "Cette formation permet d'acquérir les compétences nécessaires pour concevoir, développer et maintenir des sites web dynamiques. Vous apprendrez à maîtriser les langages clés comme HTML, CSS, JavaScript, React, ainsi que des outils de gestion de versions tels que Git/GitHub. En plus du développement front-end, vous découvrirez le développement back-end avec NodeJS, Express et MongoDB, vous permettant de créer des sites web complets.",
+        "duration": "8 mois",
+        "link": "https://openclassrooms.com/fr/paths/899-developpeur-web"
+      }
+    ],
+    "experiences": [
+      {
+        "title": "Stage de Développement Web chez EXERIALE",
+        "location": " Paris 15,  Île-de-France",
+        "year": "Du 6 Juin 2023 au 3 Juillet 2023",
+        "description": "Pendant mon stage en tant que développeur web, j’ai été chargé de créer un site internet pour l’entreprise, dans le but de renforcer sa présence en ligne et de présenter ses services à ses clients. Ce projet m’a permis de travailler sur l’ensemble des aspects du développement web, de la conception à la mise en ligne.",
+        "duration": "1 mois"
+      }
+    ]
+  ,
    
       "skills": {
         "frontEnd": [
