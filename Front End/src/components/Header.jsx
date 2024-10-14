@@ -90,7 +90,7 @@ const Header = () => {
 
         {/* Menu Burger pour version mobile */}
         <div
-          className={`burger-icon ${menuOpen ? "open" : ""}`}
+          className={`burger-icon ${menuOpen ? "open" : ""} ${darkMode ? "dark-mode" : "light-mode"}`}
           onClick={toggleMenu}
         >
           <span className="burger-line"></span>

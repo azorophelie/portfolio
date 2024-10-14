@@ -36,7 +36,7 @@ const App = () => {
       <hr className='separator'></hr>
       <section id="contact">
         <Contact />
-      </section>*
+      </section>
       <ScrollToTopButton />
       </div>
       <Footer />

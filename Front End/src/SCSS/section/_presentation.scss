@@ -119,8 +119,7 @@ h2::after {
 // Styles pour les accordéons de formations et d'expériences
 .accordions-container {
   display: flex;
-  justify-content: center;
-  gap: 20px; 
+  justify-content: center; 
   width: 100%;
   margin-top: 30px;
 }
@@ -148,11 +147,12 @@ h2::after {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: #f0f0f0;
   padding-left: 10px;
   border-radius: 5px;
   z-index: 2;
   position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .accordion-content {

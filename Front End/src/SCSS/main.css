@@ -57,7 +57,8 @@ body {
   width: 65vw;
   z-index: 10;
   height: 100px;
-  background-color: #ffffff;
+  background-color: #fffefe;
+  flex-wrap: nowrap;
 }
 
 .navLinks {
@@ -66,6 +67,12 @@ body {
   padding: 0;
   margin: 0;
   margin-left: auto;
+}
+
+.burger-icon {
+  display: flex;
+  position: fixed;
+  right: 20px;
 }
 
 .navLinks li {
@@ -152,7 +159,6 @@ body {
   transform: translateY(-10px) rotate(-45deg);
 }
 
-/* ScrollToTopButton.css */
 .scroll {
   position: fixed;
   bottom: 40px;
@@ -203,7 +209,7 @@ body.dark-mode {
 }
 
 body.light-mode {
-  background-color: #f0f0f0;
+  background-color: #fffefe;
   color: #000000;
 }
 
@@ -211,8 +217,15 @@ body.light-mode {
   color: #000000;
 }
 
-.light-mode .navbar {
-  background-color: #f0f0f0;
+.dark-mode .burger-line {
+  background-color: #fff;
+}
+
+.light-mode {
+  background-color: #fffcfc;
+}
+.light-mode .burger-line {
+  background-color: #333;
 }
 
 .light-mode-toggle {
@@ -293,7 +306,7 @@ body.dark-mode .navLinks a:hover {
 .dark-mode .card {
   border: 1px solid #444;
   background-color: #2e2e2e;
-  box-shadow: 0 8px 16px rgba(85, 85, 85, 0.3);
+  box-shadow: 0 4px 5px rgba(46, 46, 46, 0.8);
 }
 
 .dark-mode .card-back {
@@ -343,7 +356,7 @@ body.dark-mode .navLinks a:hover {
 
 .dark-mode form {
   background-color: #2e2e2e;
-  box-shadow: 0 8px 16px rgba(85, 85, 85, 0.3);
+  box-shadow: 0 4px 5px rgba(46, 46, 46, 0.8);
 }
 
 .dark-mode fieldset {
@@ -367,7 +380,6 @@ body.dark-mode .navLinks a:hover {
 .dark-mode .scroll {
   background-color: #2e2e2e;
   color: #555;
-  box-shadow: 0 8px 16px rgba(85, 85, 85, 0.3);
 }
 
 .dark-mode .scroll:hover, .dark-mode .formation-btn:hover {
@@ -376,6 +388,7 @@ body.dark-mode .navLinks a:hover {
 
 .dark-mode .accordion-title {
   background-color: #2e2e2e;
+  box-shadow: 0 4px 5px rgba(46, 46, 46, 0.8);
 }
 
 .dark-mode .accordion-content {
@@ -502,7 +515,6 @@ h2::after {
 .accordions-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
   width: 100%;
   margin-top: 30px;
 }
@@ -530,11 +542,12 @@ h2::after {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #f1f1f1;
+  background-color: #f0f0f0;
   padding-left: 10px;
   border-radius: 5px;
   z-index: 2;
   position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-content {
@@ -1017,20 +1030,177 @@ form button:hover {
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {
+  .separator {
+    width: 80vw;
+  }
   .burger-icon {
     display: flex;
     position: fixed;
     right: 20px;
   }
+  .navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    background-color: #ffffff;
+    left: 0;
+  }
   .navLinks {
     display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 60%;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  .navLinks li {
+    margin: 20px 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  .navLinks a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+  .navLinks.open {
+    right: 0;
+  }
+  .name {
+    margin-left: 20px;
+  }
+  .dark-mode-toggle {
+    font-size: 16px;
+  }
+  .introduction {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .introduction h1 {
+    white-space: preline;
+    text-align: center;
+  }
+  .presentation {
+    width: 80vw;
+  }
+  .accordions-columns {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+  }
+  .accordion {
+    width: 100%;
+  }
+  .accordion-title {
+    justify-content: space-between;
+  }
+  .front-back-container {
+    flex-direction: column;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 80vw;
+  }
+  .card {
+    width: 37vw;
+  }
+  .presentation h2,
+  .competences h2,
+  .project h2,
+  .contact h2 {
+    font-size: 28px;
+  }
+  .project {
+    width: 80vw;
+  }
+  .projects-container {
+    max-width: 100vw;
+  }
+  .project-card {
+    width: 80vw;
+    height: auto;
+  }
+  .modal-content {
+    width: 100%;
+    max-width: 500px;
+  }
+  .modal-details {
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .modal-column {
+    padding: 5px;
+  }
+  .modal-column p {
+    white-space: normal;
+    text-align: center;
+  }
+  .modal-column .modal-description {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .modal-column .text-modal {
+    margin-bottom: 10px;
+  }
+  form fieldset {
+    width: 90%;
+  }
+  form button {
+    width: 20vw;
+  }
+  form input,
+  form textarea {
+    width: 85%;
+  }
+}
+/* Styles pour les écrans entre 768px et 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .burger-icon {
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+  }
+  .dark-mode .burger-icon {
+    color: white;
+  }
+  .dark-mode .navLinks {
+    background-color: #121212;
+  }
+  .navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    background-color: #fffefe;
+    left: 0;
   }
   .navLinks {
     position: fixed;
     top: 0;
     right: -100%;
     height: 100vh;
-    width: 60%;
+    width: 40%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -1057,32 +1227,137 @@ form button:hover {
   .navLinks.open {
     right: 0;
   }
+  .name {
+    margin-left: 20px;
+  }
+  .dark-mode-toggle {
+    font-size: 16px;
+  }
   .introduction {
-    width: 100vw; /* Utilise toute la largeur de la page */
-    margin: 0; /* Enlève les marges pour un alignement parfait */
-    padding: 0; /* Enlève le padding pour un plein écran */
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
   .introduction h1 {
-    white-space: preline;
     text-align: center;
   }
-  .presentation {
-    width: 80vw;
+  .presentation h2,
+  .competences h2,
+  .project h2,
+  .contact h2 {
+    font-size: 35px; /* Réduire la taille du titre */
   }
   .front-back-container {
-    flex-direction: column; /* Empile les sections Front-End et Back-End verticalement */
+    flex-direction: column;
   }
   .card-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
   .project-card {
     width: 100%;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .introduction h1 {
+  .modal-content {
+    width: 100%;
+    max-width: 700px;
+  }
+  .modal-details {
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .modal-column {
+    padding: 5px;
+  }
+  .modal-column p {
+    white-space: normal;
     text-align: center;
+  }
+  .modal-column .modal-description {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .modal-column .text-modal {
+    margin-bottom: 10px;
+  }
+  form fieldset {
+    width: 90%;
+  }
+  form button {
+    width: 12vw;
+  }
+  form input,
+  form textarea {
+    width: 85%;
+  }
+}
+@media (max-width: 1320px) and (min-width: 1024px) {
+  .navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    background-color: #ffffff;
+    left: 0;
+  }
+  .navLinks li {
+    margin-right: 20px;
+  }
+  .dark-mode-toggle {
+    font-size: 16px;
+  }
+  .name {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .introduction {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .front-back-container {
+    flex-direction: column;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .modal-content {
+    width: 100%;
+    max-width: 800px;
+  }
+  .modal-details {
+    flex-direction: column;
+    font-size: 15px;
+  }
+  .modal-column {
+    padding: 5px;
+  }
+  .modal-column p {
+    white-space: normal;
+    text-align: center;
+  }
+  .modal-column .modal-description {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .modal-column .text-modal {
+    margin-bottom: 10px;
+  }
+  form fieldset {
+    width: 90%;
+  }
+  form button {
+    width: 12vw;
+  }
+  form input,
+  form textarea {
+    width: 85%;
   }
 }/*# sourceMappingURL=main.css.map */

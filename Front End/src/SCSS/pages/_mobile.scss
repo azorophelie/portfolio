@@ -1,21 +1,36 @@
 @media (min-width: 320px) and (max-width: 767.98px) { 
+  
+  .separator {
+    width: 80vw;
+  }  
+  
+  // Menu Burger
     .burger-icon {
         display: flex;
         position: fixed;
-        right: 20px; // Afficher le burger uniquement sur mobile
+        right: 20px; 
       }
-    
-      .navLinks {
-        display: flex; // Le menu sera caché hors écran par défaut
+
+  // Header
+      .navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 100%; 
+        z-index: 10;
+        background-color: #ffffff; 
+        left: 0;  
       }
+     
       .navLinks {
+        display: flex;
         position: fixed;
         top: 0;
-        right: -100%; // Par défaut, hors de l'écran à droite
+        right: -100%; 
         height: 100vh;
-        width: 60%; // Taille du menu sur mobile
+        width: 60%; 
         background-color: #fff;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -40,40 +55,128 @@
         }
       
         &.open {
-          right: 0; // Quand le menu est ouvert
+          right: 0; 
         }
       }
 
-      .introduction {
-        width: 100vw; /* Utilise toute la largeur de la page */
-        margin: 0;    /* Enlève les marges pour un alignement parfait */
-        padding: 0;   /* Enlève le padding pour un plein écran */
-    }
+      .name {
+        margin-left: 20px;
+      }
 
-    .introduction h1 {
+      .dark-mode-toggle {
+        font-size: 16px;
+      }
+
+    // Introduction
+      .introduction {
+        width: 100vw; 
+        margin: 0;    
+        padding: 0;   
+      }
+
+      .introduction h1 {
         white-space: preline;
         text-align: center;
-    }
+      } 
 
-    .presentation  {
+    // Présentation
+      .presentation  {
         width: 80vw;
-    }
-    .front-back-container {
-      flex-direction: column; /* Empile les sections Front-End et Back-End verticalement */
-    }
+      }
 
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne */
-      gap: 10px;
-      
-  }
-
-  // Projets
-  .project-card  {
+      // Accordeons pour formation et expériences 
+      .accordions-columns {
+        flex-direction: column;
+        align-items: center; 
+        width: 80vw; 
+      }
     
-    width: 100%;
-  }
-  
+      .accordion {
+        width: 100%; 
+      }
+    
+      .accordion-title {
+        justify-content: space-between;
+      }
+
+    // Cartes de compétences pour la version mobile
+      .front-back-container {
+        flex-direction: column; 
+      }
+      
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // 2 Cartes par ligne
+        gap: 20px;
+        max-width: 80vw;
+      }
+
+      .card {
+        width: 37vw; 
+      }
+
+      .presentation h2, 
+      .competences h2, 
+      .project h2, 
+      .contact h2 {
+        font-size: 28px; 
+      }
+    
+    // Projets
+
+    .project {
+      width: 80vw; 
     }
+
+    .projects-container {
+      max-width: 100vw;
+    }
+
+    .project-card {
+      width: 80vw;
+      height: auto; 
+    }
+
+    // Ouverture de Modale
+    .modal-content {
+      width: 100%;
+      max-width: 500px; 
+    }
+
+    .modal-details {
+      flex-direction: column;
+      font-size: 15px;
+    }
+
+    .modal-column {
+      padding: 5px;
+    }
+
+    .modal-column p {
+      white-space: normal;
+      text-align: center; 
+    }
+
+    .modal-column .modal-description {
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+
+    .modal-column .text-modal {
+      margin-bottom: 10px;
+    }
+  // Formulaire de Contact
+    form fieldset {
+      width: 90%;
+    }
+  
+    form button {
+      width: 20vw;
+    }
+    
+    form input,
+    form textarea {
+      width: 85%;
+    }
+}
     

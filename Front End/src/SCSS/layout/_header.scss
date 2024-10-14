@@ -61,7 +61,8 @@ body {
   width: 65vw;
   z-index: 10;
   height: 100px;
-  background-color: #ffffff
+  background-color: #fffefe;
+  flex-wrap: nowrap;
 }
 
 // La liste de navigation
@@ -71,6 +72,12 @@ body {
   padding: 0;
   margin: 0;
   margin-left: auto;
+  
+}
+.burger-icon {
+  display: flex;
+  position: fixed;
+  right: 20px; // Afficher le burger uniquement sur mobile
 }
 
 .navLinks li {
@@ -153,12 +160,12 @@ body {
     width: 100%;
     height: 3px;
     background-color: #333;
-    transition: transform 0.3s ease, opacity 0.3s ease;  // Transition pour l'animation
+    transition: transform 0.3s ease, opacity 0.3s ease;  
   }
 
   // Transformation de la première ligne lorsque le menu est ouvert
   &.open .burger-line:nth-child(1) {
-    transform: translateY(10px) rotate(45deg); // Translation et rotation en croix
+    transform: translateY(10px) rotate(45deg); 
   }
 
   // Cache la deuxième ligne lorsque le menu est ouvert
@@ -167,11 +174,11 @@ body {
   }
   // Transformation de la troisième ligne lorsque le menu est ouvert
   &.open .burger-line:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg); // Translation et rotation en croix
+    transform: translateY(-10px) rotate(-45deg); 
   }
 }
 
-/* ScrollToTopButton.css */
+// Bouton revenir en haut
 .scroll {
   position: fixed;
   bottom: 40px; 

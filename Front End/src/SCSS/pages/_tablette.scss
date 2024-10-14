@@ -1,5 +1,250 @@
+/* Styles pour les écrans entre 768px et 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    // Menu Burger
+    .burger-icon {
+        display: flex;
+        gap: 4px;
+        cursor: pointer;
+        position: relative; 
+        z-index: 1001; 
+    }
+
+    .dark-mode .burger-icon {
+        color: white;
+    
+    }
+
+    .dark-mode .navLinks {
+        background-color: #121212;
+    }
+    // Header
+    .navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 100%; 
+        z-index: 10;
+        background-color: #fffefe; 
+        left: 0;   
+    }
+    
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 40%; 
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+      
+        li {
+          margin: 20px 0;
+          font-family: 'Montserrat', sans-serif;
+        }
+
+        a {
+          text-decoration: none;
+          color: #333;
+          font-size: 18px;
+          position: relative;
+          padding-bottom: 5px;
+          transition: color 0.3s ease-in-out;
+        }
+      
+        &.open {
+          right: 0; 
+        }
+    }
+
+    .name {
+        margin-left: 20px;
+    }
+
+    // Bouton dark mode
+    .dark-mode-toggle {
+        font-size: 16px;
+    }
+
+    // Introduction
+    .introduction {
+        width: 100vw; 
+        margin: 0;    
+        padding: 0;   
+    }
+
     .introduction h1 {
         text-align: center;
     }
+
+    .presentation h2, 
+    .competences h2, 
+    .project h2, 
+    .contact h2 {
+      font-size: 35px; /* Réduire la taille du titre */
+    }
+
+    // Cartes de compétences 
+    .front-back-container {
+        flex-direction: column; 
+    }
+  
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // 2 Cartes par ligne
+        gap: 10px;
+    }
+
+     // Cartes pour les projets
+    .project-card {
+        width: 100%;
+    }
+
+    // Ouverture de Modale
+    .modal-content {
+        width: 100%;
+        max-width: 700px; 
+    }
+
+    .modal-details {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .modal-column {
+        padding: 5px;
+    }
+
+    .modal-column p {
+        white-space: normal;
+        text-align: center; 
+    }
+
+    .modal-column .modal-description {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    .modal-column .text-modal {
+        margin-bottom: 10px;
+    }
+
+    // Formulaire de Contact
+    form fieldset {
+        width: 90%;
+    }
+      
+    form button {
+        width: 12vw;
+    }
+        
+    form input,
+    form textarea {
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 1320px) and (min-width: 1024px) {
+   
+    // Header
+    .navbar {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        width: 100%; 
+        z-index: 10;
+        background-color: #ffffff; 
+        left: 0;  
+    }
+
+    .navLinks li {
+        margin-right: 20px;
+    }
+
+    .dark-mode-toggle {
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 20px; 
+        margin-left: 20px;
+    }
+
+    //Introduction
+    .introduction {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    // Cartes de compétences 
+    .front-back-container {
+      flex-direction: column; 
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // 2 Cartes par ligne
+      gap: 10px;
+    }
+
+    // Cartes pour les projets
+    .project-card {
+        width: 100%;
+    }
+
+    // Ouverture de Modale
+    .modal-content {
+        width: 100%;
+        max-width: 800px; 
+    }
+
+    .modal-details {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .modal-column {
+        padding: 5px;
+    }
+
+    .modal-column p {
+        white-space: normal;
+        text-align: center; 
+    }
+
+    .modal-column .modal-description {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    .modal-column .text-modal {
+        margin-bottom: 10px;
+    }
+
+    // Formulaire de Contact
+    form fieldset {
+        width: 90%;
+    }
+      
+    form button {
+        width: 12vw;
+    }
+        
+    form input,
+    form textarea {
+        width: 85%;
+    }   
+      
 }
