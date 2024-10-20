@@ -63,6 +63,14 @@
         margin-left: 20px;
       }
 
+      .dark {
+        display: none; 
+      }
+    
+      .moon-sun {
+        font-size: 20px; 
+      }
+
       .dark-mode-toggle {
         font-size: 16px;
       }
@@ -79,6 +87,16 @@
         text-align: center;
       } 
 
+      .intro-btn button {
+        font-size: 0; 
+      }
+    
+      .intro-btn i {
+        font-size: 24px; 
+        margin-right: 0; 
+      }
+
+      
     // Présentation
       .presentation  {
         width: 80vw;
@@ -103,6 +121,12 @@
       .front-back-container {
         flex-direction: column; 
       }
+
+      .section-container h3 {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
       
       .card-container {
         display: grid;
@@ -119,7 +143,7 @@
       .competences h2, 
       .project h2, 
       .contact h2 {
-        font-size: 28px; 
+        font-size: 18px; 
       }
     
     // Projets
@@ -139,8 +163,46 @@
 
     // Ouverture de Modale
     .modal-content {
-      width: 100%;
+      width: 80%;
       max-width: 500px; 
+      max-height: 90vh;
+      padding: 15px;
+      z-index: 40;
+    }
+
+    .modal-overlay {
+      overflow: hidden;
+    }
+
+    .modal-content h3 {
+      margin-top: 0;
+    }
+   
+    .modal-buttons {
+      display: flex;
+      justify-content: center; 
+      gap: 20px; 
+      margin-top: 15px;
+  
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+       border: none;
+        text-decoration: none;
+  
+        &:hover {
+          background-color: #b997b8;
+          width: 50px;
+        }
+  
+        svg {
+          color: #a567a2; 
+        }
+      }
     }
 
     .modal-details {
@@ -165,13 +227,40 @@
     .modal-column .text-modal {
       margin-bottom: 10px;
     }
+
+    .projet-btn {
+      font-size: 12px;
+    }
+
+    .modal-close {
+      padding-top: 2px;
+      padding-right: 5px;
+    }
+
+    .modal-buttons .text-btn {
+      color: black;
+      padding-left: 10px;
+    }
+  
+    .modal-buttons .modal-icon {
+      font-size: 30px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
   // Formulaire de Contact
+    form {
+      width: 70vw;
+    }
+
     form fieldset {
       width: 90%;
     }
-  
+
     form button {
-      width: 20vw;
+      width: 25vw;
+      padding: 5px;
     }
     
     form input,

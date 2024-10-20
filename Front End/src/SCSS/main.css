@@ -170,7 +170,7 @@ body {
   padding: 10px 15px;
   cursor: pointer;
   font-size: 20px;
-  z-index: 1000;
+  z-index: 30;
   transition: opacity 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -821,6 +821,7 @@ h2::after {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow: hidden;
 }
 
 .modal-content {
@@ -828,9 +829,10 @@ h2::after {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   text-align: center;
+  overflow-y: auto;
 }
 
 .modal-video {
@@ -923,6 +925,15 @@ h2::after {
 
 .modal-buttons {
   margin-top: 15px;
+}
+
+.modal-buttons .icon {
+  font-size: 24px; /* Taille des icônes */
+  margin-right: 8px; /* Un peu d'espacement entre l'icône et le texte */
+}
+
+.modal-buttons .text-btn {
+  display: inline; /* Par défaut, on affiche le texte */
 }
 
 /* src/SCSS/section/_contact.scss */
@@ -1083,6 +1094,12 @@ form button:hover {
   .name {
     margin-left: 20px;
   }
+  .dark {
+    display: none;
+  }
+  .moon-sun {
+    font-size: 20px;
+  }
   .dark-mode-toggle {
     font-size: 16px;
   }
@@ -1094,6 +1111,13 @@ form button:hover {
   .introduction h1 {
     white-space: preline;
     text-align: center;
+  }
+  .intro-btn button {
+    font-size: 0;
+  }
+  .intro-btn i {
+    font-size: 24px;
+    margin-right: 0;
   }
   .presentation {
     width: 80vw;
@@ -1112,6 +1136,11 @@ form button:hover {
   .front-back-container {
     flex-direction: column;
   }
+  .section-container h3 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
   .card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1125,7 +1154,7 @@ form button:hover {
   .competences h2,
   .project h2,
   .contact h2 {
-    font-size: 28px;
+    font-size: 18px;
   }
   .project {
     width: 80vw;
@@ -1138,8 +1167,40 @@ form button:hover {
     height: auto;
   }
   .modal-content {
-    width: 100%;
+    width: 80%;
     max-width: 500px;
+    max-height: 90vh;
+    padding: 15px;
+    z-index: 40;
+  }
+  .modal-overlay {
+    overflow: hidden;
+  }
+  .modal-content h3 {
+    margin-top: 0;
+  }
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  .modal-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+  }
+  .modal-buttons a:hover {
+    background-color: #b997b8;
+    width: 50px;
+  }
+  .modal-buttons a svg {
+    color: #a567a2;
   }
   .modal-details {
     flex-direction: column;
@@ -1159,11 +1220,32 @@ form button:hover {
   .modal-column .text-modal {
     margin-bottom: 10px;
   }
+  .projet-btn {
+    font-size: 12px;
+  }
+  .modal-close {
+    padding-top: 2px;
+    padding-right: 5px;
+  }
+  .modal-buttons .text-btn {
+    color: black;
+    padding-left: 10px;
+  }
+  .modal-buttons .modal-icon {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    width: 70vw;
+  }
   form fieldset {
     width: 90%;
   }
   form button {
-    width: 20vw;
+    width: 25vw;
+    padding: 5px;
   }
   form input,
   form textarea {
@@ -1245,7 +1327,7 @@ form button:hover {
   .competences h2,
   .project h2,
   .contact h2 {
-    font-size: 35px; /* Réduire la taille du titre */
+    font-size: 35px;
   }
   .front-back-container {
     flex-direction: column;
@@ -1259,8 +1341,9 @@ form button:hover {
     width: 100%;
   }
   .modal-content {
-    width: 100%;
-    max-width: 700px;
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
   }
   .modal-details {
     flex-direction: column;
@@ -1279,6 +1362,9 @@ form button:hover {
   }
   .modal-column .text-modal {
     margin-bottom: 10px;
+  }
+  form {
+    width: 50vw;
   }
   form fieldset {
     width: 90%;

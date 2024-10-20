@@ -1,5 +1,8 @@
 // src/components/Modal.jsx
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub} from "@fortawesome/free-brands-svg-icons";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 
 // Composant Modal qui prend trois props : isOpen (pour savoir si la modale est ouverte),
 // onClose (fonction pour fermer la modale), et project (détails du projet à afficher dans la modale)
@@ -49,24 +52,29 @@ const Modal = ({ isOpen, onClose, project }) => {
           </div>
         </div>
         {/* Boutons permettant de consulter le code GitHub ou la page GitHub du projet */}
-        <div className="modal-buttons">
+         {/* Boutons avec icônes */}
+         <div className="modal-buttons">
           <a
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
             className="projet-btn"
           >
-            Code GitHub
+            {/* Icône GitHub */}
+            <FontAwesomeIcon icon={faGithub} className="modal-icon" />
+            <span className="text-btn">Code GitHub</span>
           </a>
           {project.githubPages ? (
-          <a
-            href={project.githubPages}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="projet-btn"
-          >
-            GitHub Pages
-          </a>
+            <a
+              href={project.githubPages}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="projet-btn"
+            >
+              {/* Icône GitHub Pages */}
+              <FontAwesomeIcon icon={faFileAlt}  className="modal-icon"/>
+              <span className="text-btn">GitHub Pages</span>
+            </a>
 ) : null}
         </div>
       </div>

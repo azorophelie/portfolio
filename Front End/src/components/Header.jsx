@@ -81,11 +81,12 @@ const Header = () => {
           </div>
           {/* Bouton pour basculer entre mode clair et mode sombre */}
           <button
-            onClick={toggleDarkMode}
-            className={`dark-mode-toggle ${darkMode ? "dark-mode-toggle" : "light-mode-toggle"}`}
-          >
-            {darkMode ? "Light Mode ☀️" : "Dark Mode 🌙"}
-          </button>
+  onClick={toggleDarkMode}
+  className={`dark-mode-toggle ${darkMode ? "dark-mode-toggle" : "light-mode-toggle"}`}
+>
+  <span className="dark">{darkMode ? "Light Mode" : "Dark Mode"}</span> 
+  <span className="moon-sun">{darkMode ? "🌙" : "☀️"}</span> 
+</button>
         </div>
 
         {/* Menu Burger pour version mobile */}
