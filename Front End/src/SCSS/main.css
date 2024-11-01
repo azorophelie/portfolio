@@ -927,9 +927,8 @@ h2::after {
   margin-top: 15px;
 }
 
-.modal-buttons .icon {
-  font-size: 24px; /* Taille des icônes */
-  margin-right: 8px; /* Un peu d'espacement entre l'icône et le texte */
+.modal-icon {
+  display: none;
 }
 
 .modal-buttons .text-btn {

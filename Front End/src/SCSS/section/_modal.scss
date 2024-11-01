@@ -119,11 +119,10 @@
   margin-top: 15px;
 }
 
-.modal-buttons .icon {
-  font-size: 24px; /* Taille des icônes */
-  margin-right: 8px; /* Un peu d'espacement entre l'icône et le texte */
+.modal-icon {
+  padding-right: 5px;
 }
 
 .modal-buttons .text-btn {
-  display: inline; /* Par défaut, on affiche le texte */
+  display: inline; 
 }
