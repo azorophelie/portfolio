@@ -1,4 +1,39 @@
+# Mon Portfolio
+Bienvenue sur le dépôt de mon portfolio ! Ce projet met en avant mes compétences, mes projets, et mon parcours professionnel en tant que développeur web. Ce site est entièrement responsive et conçu pour offrir une navigation fluide sur tous les appareils (mobile, tablette, desktop).
+
+## Fonctionnalités
+- **Présentation Personnelle** : Un aperçu pour me connaître un petit peu.
+- **Formations et Expériences** : Un parcours détaillé de mes formations et de mes expériences professionnelles.
+- **Compétences** : Les technologies, frameworks et outils que je maîtrise, présentés de manière claire et organisée.
+- **Projets** : Une galerie de mes principaux projets, avec des captures d'écran, des descriptions et des liens vers le code source et une video pour démontrer les fonctionnalités du projet.
+- **Contact** : Un formulaire de contact.
+- **Dark Mode** : Possibilité de basculer entre un mode clair et un mode sombre pour une meilleure expérience de navigation en fonction des préférences de l'utilisateur.
+
+## Technologies Utilisées
+- Framework : **React**
+- Gestion des Styles : **SCSS** pour un style personnalisé et une organisation optimisée des fichiers de styles
+
+---
+---
 # Projet React avec Create React App
+![Node.js](https://img.shields.io/badge/NODE.JS-blue?style=flat-square)
+![React](https://img.shields.io/badge/React-16.13.1-blue?style=flat-square)
+![NPM](https://img.shields.io/badge/NPM-6.14.4-blue?style=flat-square)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
+
+#### Clonez le dépôt : 
+git clone ```git@github.com:azorophelie/portfolio.git```
+
+#### Naviguez vers le répertoire du projet cloné :
+```cd portfolio```
+
+## 2. Installer le package des dépendances Back End:
+Accédez au répertoire du backend et installez les dépendances :
+
+```cd Front End```
+
+```npm install```
+
 
 Ce projet utilise `create-react-app` pour initialiser et gérer une application React. 
 
