@@ -69,9 +69,13 @@
     }
 
     .dark-mode .burger-icon:hover {
-      
       transform: scale(1.05);
     }
+
+    .dark-mode .modal-icon {
+      color: #555;
+    }
+
 
       .name {
         margin-left: 20px;
@@ -88,6 +92,7 @@
       .dark-mode-toggle {
         font-size: 16px;
       }
+      
 
       
 
@@ -207,18 +212,26 @@
         width: 40px;
         height: 40px;
         background-color: transparent;
-       border: none;
+        border: none;
         text-decoration: none;
   
         &:hover {
           background-color: #b997b8;
           width: 50px;
         }
-  
+    
         svg {
           color: #a567a2; 
         }
       }
+    }
+    
+    .dark-mode .modal-buttons .text-btn {
+      color: white;
+    }
+
+    .dark-mode .modal-buttons a {
+      background-color: transparent;
     }
 
     .modal-details {
