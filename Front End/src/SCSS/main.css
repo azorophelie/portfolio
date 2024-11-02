@@ -4,6 +4,7 @@
 /* src/SCSS/layout/_header.scss */
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .page-container {
@@ -13,7 +14,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 100vw; /* Assurer que tout soit aligné au centre */
+  width: 100vw;
   box-sizing: border-box;
 }
 
@@ -46,7 +47,6 @@ body {
   font-style: italic;
   margin-right: 15px;
   display: flex;
-  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -267,6 +267,10 @@ body.dark-mode .navLinks a:hover {
   background-color: #555;
 }
 
+.dark-mode .burger-icon {
+  background-color: #000;
+}
+
 .dark-mode .intro-btn button:hover {
   background-color: #777;
 }
@@ -399,7 +403,7 @@ body.dark-mode .navLinks a:hover {
   background-color: #555;
 }
 
-/* src/SCSS/section/d_presentation.scss */
+/* src/SCSS/section/_presentation.scss */
 .introduction {
   display: flex;
   flex-direction: column;
@@ -831,6 +835,7 @@ h2::after {
   border-radius: 8px;
   width: 90%;
   max-width: 900px;
+  max-height: 90%;
   text-align: center;
   overflow-y: auto;
 }
@@ -928,11 +933,11 @@ h2::after {
 }
 
 .modal-icon {
-  display: none;
+  padding-right: 5px;
 }
 
 .modal-buttons .text-btn {
-  display: inline; /* Par défaut, on affiche le texte */
+  display: inline;
 }
 
 /* src/SCSS/section/_contact.scss */
@@ -1028,7 +1033,7 @@ form button:hover {
 }
 
 .footer-icon:hover {
-  color: #b997b8; /* Couleur lors du hover */
+  color: #b997b8;
 }
 
 .footer-content p {
@@ -1047,6 +1052,9 @@ form button:hover {
     display: flex;
     position: fixed;
     right: 20px;
+  }
+  .header {
+    height: 100px;
   }
   .navbar {
     position: fixed;
@@ -1155,6 +1163,9 @@ form button:hover {
   .contact h2 {
     font-size: 18px;
   }
+  .card-back p {
+    font-size: 14px;
+  }
   .project {
     width: 80vw;
   }
@@ -1250,6 +1261,21 @@ form button:hover {
   form textarea {
     width: 85%;
   }
+  .dark-mode .modal-buttons .text-btn {
+    color: white;
+  }
+  .dark-mode .modal-buttons a {
+    background-color: transparent;
+  }
+  .dark-mode .navLinks {
+    background-color: #121212;
+  }
+  .dark-mode .burger-icon:hover {
+    transform: scale(1.05);
+  }
+  .dark-mode .modal-icon {
+    color: #555;
+  }
 }
 /* Styles pour les écrans entre 768px et 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1259,12 +1285,6 @@ form button:hover {
     cursor: pointer;
     position: relative;
     z-index: 1001;
-  }
-  .dark-mode .burger-icon {
-    color: white;
-  }
-  .dark-mode .navLinks {
-    background-color: #121212;
   }
   .navbar {
     position: fixed;
@@ -1310,9 +1330,6 @@ form button:hover {
   }
   .name {
     margin-left: 20px;
-  }
-  .dark-mode-toggle {
-    font-size: 16px;
   }
   .introduction {
     width: 100vw;
@@ -1374,6 +1391,15 @@ form button:hover {
   form input,
   form textarea {
     width: 85%;
+  }
+  .dark-mode-toggle {
+    font-size: 16px;
+  }
+  .dark-mode .burger-icon {
+    color: white;
+  }
+  .dark-mode .navLinks {
+    background-color: #121212;
   }
 }
 @media (max-width: 1320px) and (min-width: 1024px) {

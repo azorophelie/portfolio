@@ -10,14 +10,6 @@
         z-index: 1001; 
     }
 
-    .dark-mode .burger-icon {
-        color: white;
-    
-    }
-
-    .dark-mode .navLinks {
-        background-color: #121212;
-    }
     // Header
     .navbar {
         position: fixed;
@@ -68,13 +60,6 @@
 
     .name {
         margin-left: 20px;
-    }
-
-  
-
-    // Bouton dark mode
-    .dark-mode-toggle {
-        font-size: 16px;
     }
 
     // Introduction
@@ -145,6 +130,7 @@
     form {
         width: 50vw;
     }
+    
     form fieldset {
         width: 90%;
     }
@@ -156,6 +142,20 @@
     form input,
     form textarea {
         width: 85%;
+    }
+
+    // Bouton dark mode
+    .dark-mode-toggle {
+        font-size: 16px;
+    }
+
+    // Dark Mode
+    .dark-mode .burger-icon {
+        color: white;
+    }
+
+    .dark-mode .navLinks {
+        background-color: #121212;
     }
 }
 

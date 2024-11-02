@@ -16,7 +16,7 @@ const Presentation = () => {
         <div className="intro-btn">
           {/* Bouton pour envoyer un e-mail */}
           <button
-            onClick={() => handleButtonClick("mailto:azorophelie@yahoo.com")}
+            onClick={() => handleButtonClick("mailto:azor.ophelie@gmail.com")}
           >
             <i className="fas fa-envelope"></i> Me contacter
           </button>
@@ -26,7 +26,7 @@ const Presentation = () => {
           </button>
           {/* Bouton pour accéder au profil GitHub */}
           <button
-            onClick={() => handleButtonClick("https://github.com/azorophelie")}
+            onClick={() => handleButtonClick("https://github.com/azorophelie?tab=repositories")}
           >
             <i className="fab fa-github"></i> GitHub
           </button>

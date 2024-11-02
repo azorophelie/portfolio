@@ -14,7 +14,7 @@ const Footer = () => {
           
           <FaGithub
             className="footer-icon"
-            onClick={() => handleLinkClick("https://github.com/azorophelie")}
+            onClick={() => handleLinkClick("https://github.com/azorophelie?tab=repositories")}
           />
           
           <FaLinkedin
@@ -24,7 +24,7 @@ const Footer = () => {
           
           <FaEnvelope
             className="footer-icon"
-            onClick={() => handleLinkClick("mailto:azorophelie@yahoo.com")}
+            onClick={() => handleLinkClick("mailto:azor.ophelie@gmail.com")}
           />
           <p>Développé avec React et Visual Studio Code.</p>
           <p>Hébergé sur gh-pages</p>

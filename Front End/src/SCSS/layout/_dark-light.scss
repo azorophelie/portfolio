@@ -51,12 +51,7 @@ body.light-mode {
 }
 
 
-
-
-
 // Changement de l'arrière-plan quand le menu est ouvert
-
-
 .light-mode-toggle {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
   transition: box-shadow 0.3s ease, transform 0.1s ease;
@@ -99,7 +94,7 @@ body.dark-mode .navLinks a:hover {
 }
 
 .dark-mode .burger-icon {
-  background-color: #000; /* Fond noir */
+  background-color: #000; 
 }
   
 .dark-mode .intro-btn button:hover {

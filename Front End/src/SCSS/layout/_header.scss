@@ -14,7 +14,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  width: 100vw; /* Assurer que tout soit aligné au centre */
+  width: 100vw; 
   box-sizing: border-box;
 }
 
@@ -50,8 +50,7 @@ body {
   font-style: italic;
   margin-right: 15px;
   display: flex;
-  
-  white-space: nowrap; // Empêcher le passage à la ligne
+  white-space: nowrap; 
   
 }
 
@@ -79,7 +78,7 @@ body {
 .burger-icon {
   display: flex;
   position: fixed;
-  right: 20px; // Afficher le burger uniquement sur mobile
+  right: 20px; 
 }
 
 .navLinks li {
@@ -92,7 +91,7 @@ body {
   text-decoration: none;
   color: #333;
   font-size: 18px;
-  position: relative; // Position relative pour les animations sous les liens
+  position: relative; 
   padding-bottom: 5px; 
   transition: color 0.3s ease-in-out; 
 }
