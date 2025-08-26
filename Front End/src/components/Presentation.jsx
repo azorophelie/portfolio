@@ -1,7 +1,7 @@
 import React from "react";
 import presentationData from "../data/details.json"; // Importation des données de présentation à partir d'un fichier JSON
 import myselfPhoto from "../images/me.webp";
-import cvPDF from "../images/Cv-portfolio.pdf";
+import cvPDF from "../images/cv_ophelie_azor.pdf";
 
 // Fonction pour gérer les clics sur les boutons et ouvrir un lien dans un nouvel onglet
 const handleButtonClick = (url) => {
@@ -20,13 +20,19 @@ const Presentation = () => {
           >
             <i className="fas fa-envelope"></i> Me contacter
           </button>
+
+          <button
+            onClick={() => handleButtonClick("https://www.linkedin.com/in/ophelie-azor")}
+          >
+            <i className="fab fa-github"></i> Linkedin
+          </button>
           {/* Bouton pour ouvrir le CV au format PDF */}
           <button onClick={() => handleButtonClick(cvPDF)}>
             <i className="fas fa-file-pdf"></i> Mon CV
           </button>
           {/* Bouton pour accéder au profil GitHub */}
           <button
-            onClick={() => handleButtonClick("https://github.com/azorophelie?tab=repositories")}
+            onClick={() => handleButtonClick("https://github.com/azorophelie")}
           >
             <i className="fab fa-github"></i> GitHub
           </button>
