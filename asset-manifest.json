@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f7d539a2.css",
-    "main.js": "/portfolio/static/js/main.bacee715.js",
+    "main.js": "/portfolio/static/js/main.3546b04b.js",
     "static/js/453.32bc8d24.chunk.js": "/portfolio/static/js/453.32bc8d24.chunk.js",
     "static/media/Bluel_vid.mp4": "/portfolio/static/media/Bluel_vid.2a03491a463ef38f80bb.mp4",
     "static/media/Grimoire_vid.mp4": "/portfolio/static/media/Grimoire_vid.6690cb85821f59a67128.mp4",
@@ -10,16 +10,16 @@
     "static/media/Kasa_Projet_5.webp": "/portfolio/static/media/Kasa_Projet_5.7fdecd7c8cbace4f414d.webp",
     "static/media/Vieux_Grimoire.webp": "/portfolio/static/media/Vieux_Grimoire.e5b3cbc8e00c23bb52af.webp",
     "static/media/Booki_Projet_2.webp": "/portfolio/static/media/Booki_Projet_2.e0ffd4e3ab596c450c3a.webp",
+    "static/media/cv_ophelie_azor.pdf": "/portfolio/static/media/cv_ophelie_azor.4d14e1d338910b3c58be.pdf",
     "static/media/Bluel_Projet_3.webp": "/portfolio/static/media/Bluel_Projet_3.c117553895df743b7fb4.webp",
-    "static/media/Cv-portfolio.pdf": "/portfolio/static/media/Cv-portfolio.3d9167da2724807799dd.pdf",
-    "static/media/me.webp": "/portfolio/static/media/me.1571f7b4a5b648c5d8b1.webp",
+    "static/media/me.webp": "/portfolio/static/media/me.f0c85c34ff80234282cc.webp",
     "index.html": "/portfolio/index.html",
     "main.f7d539a2.css.map": "/portfolio/static/css/main.f7d539a2.css.map",
-    "main.bacee715.js.map": "/portfolio/static/js/main.bacee715.js.map",
+    "main.3546b04b.js.map": "/portfolio/static/js/main.3546b04b.js.map",
     "453.32bc8d24.chunk.js.map": "/portfolio/static/js/453.32bc8d24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7d539a2.css",
-    "static/js/main.bacee715.js"
+    "static/js/main.3546b04b.js"
   ]
 }
