@@ -22,7 +22,7 @@ const Presentation = () => {
           </button>
 
           <button
-            onClick={() => handleButtonClick("https://www.linkedin.com/in/ophelie-azor")}
+            onClick={() => handleButtonClick("https://www.linkedin.com/in/ophelieazor/")}
           >
             <i className="fab fa-github"></i> Linkedin
           </button>

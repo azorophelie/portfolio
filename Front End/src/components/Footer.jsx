@@ -19,7 +19,7 @@ const Footer = () => {
           
           <FaLinkedin
             className="footer-icon"
-            onClick={() => handleLinkClick("https://www.linkedin.com/in/ophelie-azor")}
+            onClick={() => handleLinkClick("https://www.linkedin.com/in/ophelieazor/")}
           />
           
           <FaEnvelope
