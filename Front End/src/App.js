@@ -25,15 +25,24 @@ const App = () => {
                 <Presentation />
             </section>
             <Formation />
-            <hr className="separator"></hr>
+            <div className="section-separator smaller">
+            <span>🌸</span>
+</div>
+
             <section id="competences">
                 <Skills />
             </section>
-            <hr className="separator"></hr>
+            <div className="section-separator small">
+  <span>🌸</span><span>🌸</span>
+</div>
+
             <section id="projects">
           <Projects />
       </section>
-      <hr className='separator'></hr>
+      <div className="section-separator">
+  <span>🌸</span><span>🌸</span><span>🌸</span>
+</div>
+
       <section id="contact">
         <Contact />
       </section>

@@ -4,88 +4,70 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import presentationData from "../data/details.json";
 
 const Formations = () => {
-  // États pour gérer l'ouverture/fermeture des accordéons
   const [openFormationIndex, setOpenFormationIndex] = useState(null);
   const [openExperienceIndex, setOpenExperienceIndex] = useState(null);
 
-  // Fonction pour basculer l'état de l'accordéon des formations
-  const toggleFormationAccordion = (index) => {
-    setOpenFormationIndex(openFormationIndex === index ? null : index);
-  };
-
-  // Fonction pour basculer l'état de l'accordéon des expériences
-  const toggleExperienceAccordion = (index) => {
-    setOpenExperienceIndex(openExperienceIndex === index ? null : index);
-  };
-
-  // Fonction pour vérifier si un accordéon est ouvert
-  const isFormationOpen = (index) => openFormationIndex === index;
-  const isExperienceOpen = (index) => openExperienceIndex === index;
-
   return (
-    <div className="accordions-container">
-      <div className="accordions-columns">
-        {/* Section des Formations */}
-        <div className="accordion">
-          <h3>Formations</h3>
-          {presentationData.formations.map((formation, index) => (
-            <div key={index} className="accordion-item">
-              <div
-                className="accordion-title"
-                onClick={() => toggleFormationAccordion(index)}
-              >
-                <h4>{formation.title}</h4>
-                <FontAwesomeIcon
-                  icon={faChevronDown}
-                  className={`arrow ${isFormationOpen(index) ? "open" : ""}`}
-                />
-              </div>
-              <div
-                className={`accordion-content ${isFormationOpen(index) ? "open" : ""}`}
-              >
-                <p>{formation.year}</p>
-                <p>{formation.description}</p>
-                <p>{formation.location}</p>
-                <p>Durée : {formation.duration}</p>
-                <button
-                  onClick={() => window.open(formation.link, "_blank")}
-                  className="formation-btn"
-                >
-                  Voir les détails de la formation
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
+ <div className="accordions-container">
+  <div className="accordions-columns">
+    <AccordionSection
+      title={<h3 className="formation-title">Formations</h3>}
+      items={presentationData.formations}
+      openIndex={openFormationIndex}
+      toggleAccordion={(i) =>
+        setOpenFormationIndex(openFormationIndex === i ? null : i)
+      }
+      isOpen={(i) => openFormationIndex === i}
+    />
 
-        <div className="accordion">
-          <h3>Expériences</h3>
-          {presentationData.experiences.map((experience, index) => (
-            <div key={index} className="accordion-item">
-              <div
-                className="accordion-title"
-                onClick={() => toggleExperienceAccordion(index)}
-              >
-                <h4>{experience.title}</h4>
-                <FontAwesomeIcon
-                  icon={faChevronDown}
-                  className={`arrow ${isExperienceOpen(index) ? "open" : ""}`}
-                />
-              </div>
-              <div
-                className={`accordion-content ${isExperienceOpen(index) ? "open" : ""}`}
-              >
-                <p>{experience.year}</p>
-                <p>{experience.description}</p>
-                <p>{experience.location}</p>
-                <p>Durée : {experience.duration}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+    <AccordionSection
+      title={<h3 className="experience-title">Expériences</h3>}
+      items={presentationData.experiences}
+      openIndex={openExperienceIndex}
+      toggleAccordion={(i) =>
+        setOpenExperienceIndex(openExperienceIndex === i ? null : i)
+      }
+      isOpen={(i) => openExperienceIndex === i}
+    />
+  </div>
+</div>
+
   );
 };
+
+      const AccordionSection = ({ title, items, openIndex, toggleAccordion, isOpen }) => (
+  <div className="accordion">
+    <h3>{title}</h3>
+    {items.map((item, index) => (
+      <div key={index} className="accordion-item">
+        <div
+          className="accordion-title"
+          onClick={() => toggleAccordion(index)}
+        >
+          <h4>{item.title}</h4>
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={`arrow ${isOpen(index) ? "open" : ""}`}
+          />
+        </div>
+        <div className={`accordion-content ${isOpen(index) ? "open" : ""}`}>
+          <p>{item.year}</p>
+          <p>{item.description}</p>
+          <p className="location">{item.location}</p>
+          <p>Durée : {item.duration}</p>
+          {item.link && (
+            <button
+              onClick={() => window.open(item.link, "_blank")}
+              className="formation-btn"
+            >
+              Voir les détails
+            </button>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
 
 export default Formations;

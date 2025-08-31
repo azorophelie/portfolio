@@ -7,7 +7,7 @@ import ProjectList from "../components/ProjectCard";
 const Projects = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const projects = projectData.skills.projects || [];
+  const projects = projectData.projects || [];
 
   const openModal = (project) => {
     setSelectedProject(project);

@@ -11,15 +11,36 @@
   margin: auto;    
   padding: 0 20px;        
   box-sizing: border-box; 
-  background-color: #e6d4db; 
-  color: #333;    
+  background: radial-gradient(at 20% 20%, #ffe7f1, transparent 40%),
+              radial-gradient(at 80% 30%, #ffd5f3, transparent 40%),
+              radial-gradient(at 50% 80%, #f9b7c4, transparent 40%);
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+  position: relative;
+  z-index: 1;
 }
 
-.introduction h1 {
-  font-size: 2rem;        
-  margin-bottom: 0.5rem; 
-  font-style: italic;
-  font-weight: bold;
+.intro-name {
+  font-size: 2rem;  
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+// Nom de ma formation
+.intro-job {
+  font-size: 3rem; 
+  font-weight: 500;
+  background: linear-gradient(90deg, #000000, #666666); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0.5rem;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
 .introduction p {
@@ -27,26 +48,40 @@
   margin-top: 0;           
 }
 
-.intro-btn {
-  margin-top: 20px;
+// Animation pour l'introduction
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
+.intro-btn {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
 
 .intro-btn button {
-  background-color: #a567a2;
-  color: white;
+  background: white;
+  border: 2px solid #f9b7c4;
+  color: #5f5e5e;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px 20px;
   font-size: 1rem;
   margin: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   cursor: pointer;
   transition: background-color 0.3s ease;
   align-items: center;
 }
 
 .intro-btn button:hover {
-    background-color: #b997b8;
+  background: #ffe7f1; 
+  color: #5f5e5e;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 // Présentation détaillée de ma personne 
@@ -61,15 +96,59 @@
   margin: 0 auto;  
 }
 
-.presentation h2 {
-  font-size: 40px;
-}
-
 .profile-photo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%; 
   object-fit: cover;
+  border: 2px solid #ffe7f1; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.details {
+  text-align: left;
+  column-count: 2;
+  column-gap: 40px;
+  background-color: white; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.nom {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.age {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.details .mission {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  white-space: pre-wrap; 
+}
+
+.details .background {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+  white-space: pre-wrap;  
+}
+
+.details p {
+  font-size: 1rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.8;  
 }
 
 .presentation p {
@@ -78,10 +157,17 @@
   white-space: pre-wrap;
 }
 
+// Titres presentation, competences, projets, contact
 h2 {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  position: relative;
+  color: #333;
+  font-weight: 300; 
+  text-transform: uppercase; 
 }
   
 h2::after {
@@ -89,11 +175,10 @@ h2::after {
   position: absolute;
   left: 0;
   bottom: -5px; 
-  width: 100%;
-  height: 3px; 
-  background-color: #a567a2; 
-  transform: translateX(-100%); 
-  animation: slideInOut 3s linear infinite; /* Animation de la barre */
+  width: 80%;
+  height: 2px; 
+  background: linear-gradient(90deg, #ffe7f1, #ffd5f3); 
+  animation: slideInOut 5s linear infinite;
 }
   
 // Animation pour les titres de chaque partie avec la barre qui défile
@@ -129,11 +214,12 @@ h2::after {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  width: 65vw; 
+  width: 65vw;
+  flex-wrap: wrap;
 }
-
 .accordion {
-  width: 50%; 
+  flex: 1 1 45%; 
+  min-width: 300px;
 }
 
 .accordion h3 {
@@ -148,12 +234,13 @@ h2::after {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
   padding-left: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   z-index: 2;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
 }
 
 .accordion-content {
@@ -163,37 +250,75 @@ h2::after {
   transform: translateY(-20px); 
   transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
   background-color: #f6f6f6;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.accordion-content p.location {
+  color: #777;
+  margin-top: 5px;
+}
+
+.accordion-content p:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.formation-title {
+  font-weight: 300;
+}
+
+.experience-title {
+  font-weight: 300;
 }
 
 .accordion-content.open {
   max-height: 500px; 
   opacity: 1;
-  transform: translateY(0); 
+  transform: translateY(0);
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .accordion-content p {
   padding-left: 20px;
+  margin: 6px 0;
+}
+
+.accordion-content p:last-of-type {
+  font-style: italic;
+  color: #777;
+}
+
+.accordion-content p {
+  line-height: 1.6;
 }
 
 .formation-btn {
   margin-top: 10px;
-  background-color: #a567a2;
-  color: #fff;
+  background: linear-gradient(135deg, #f9b7c4, #e39cad); 
+  color: white;
   padding: 5px 10px;
   border: none;
-  border-radius: 3px;
+  font-weight: 500;
+  border-radius: 6px;
   cursor: pointer;
   margin-left: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #b997b8;
+.formation-btn:hover {
+  background: linear-gradient(135deg, #e39cad, #c97c90); 
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
 .arrow {
   transition: transform 0.6s ease-in-out;
-  color: #a567a2;
+  color: #f9b7c4;
   font-size: 25px;
   padding: 15px;
   transform: rotate(0deg); 
@@ -204,7 +329,7 @@ h2::after {
 }
 
 .arrow:hover {
-  color: #b997b8;
+  color: #ffe7f1;
 }
 
 //Animation pour l'ouverture
@@ -230,3 +355,16 @@ h2::after {
     transform: translateY(-20px);
   }
 }
+
+.section-separator {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #f9b7c4;
+}
+
+
+
+

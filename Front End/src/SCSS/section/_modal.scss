@@ -45,18 +45,24 @@
   margin: 10px; 
   padding: 10px 20px;
   color: white;
-  background-color: #a567a2;
+  background: linear-gradient(135deg, #f9b7c4, #e39cad);
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-size: 16px;
-  transition: background-color 0.3s;
-
-    &:hover {
-        background-color: #b997b8;
-    }
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  
+   
 }
 
+.projet-btn:hover {
+   
+   background: linear-gradient(135deg, #e39cad, #c97c90);
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+    
+}
 .modal-details {
   display: flex;
   justify-content: space-between;

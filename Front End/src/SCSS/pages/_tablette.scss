@@ -91,6 +91,15 @@
         gap: 10px;
     }
 
+    .skills-layout {
+    flex-direction: column;
+    
+  }
+
+   .skills-left,
+  .skills-right {
+    width: 125%;
+  }
      // Cartes pour les projets
     .project-card {
         width: 100%;

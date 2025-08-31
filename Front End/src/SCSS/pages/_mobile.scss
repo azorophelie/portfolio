@@ -86,10 +86,17 @@
         padding: 0;   
       }
 
-      .introduction h1 {
+      .intro-name, .intro-job {
         white-space: preline;
         text-align: center;
       } 
+      .intro-name {
+        font-size: 25px;
+      }
+
+      .intro-job {
+        font-size: 35px;
+      }
 
       .intro-btn button {
         font-size: 0; 
@@ -103,7 +110,19 @@
     // Présentation
       .presentation  {
         width: 80vw;
+        
       }
+
+      .details {
+         column-count: 1;  
+         text-align: center;
+         padding: 15px;
+         font-size: 14px;
+      
+         box-shadow: 0 2px 6px rgba(0,0,0,0.05); // 👈 plus léger
+    
+      }
+
 
       // Accordeons pour formation et expériences 
       .accordions-columns {
@@ -114,6 +133,7 @@
     
       .accordion {
         width: 100%; 
+        flex: none;
       }
     
       .accordion-title {
@@ -121,6 +141,21 @@
       }
 
     // Cartes de compétences pour la version mobile
+
+    .skills-layout {
+    flex-direction: column;
+  }
+
+  .skills-left,
+  .skills-right {
+    width: 125%;
+  }
+  .tab-buttons button {
+  font-size: 0.8rem; /* plus petit (≈ 14px) */
+  padding: 6px 12px;  /* réduit aussi l’espace */
+  align-items: center;
+}
+   
       .front-back-container {
         flex-direction: column; 
       }

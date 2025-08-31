@@ -1,6 +1,6 @@
 {
     "presentation": {
-      "intro": "Ophélie Azor - \nDéveloppeuse web",
+      "intro": "Ophélie Azor \nDéveloppeuse web",
       "name": "Ophélie Azor",
       "age": "27 ans",
       "background": "Après avoir suivi une formation d'intégratrice web pendant 2 mois, dont 1 mois en entreprise, j'ai renforcé mes compétences avec une formation de 8 mois en développement web. \n\nCette double expérience m'a permis d'acquérir une solide compréhension des principes de conception web et de développement, me préparant à relever \ndes défis variés dans le domaine du web.",
@@ -102,7 +102,36 @@
             "description": "Outil de gestion de projets et de tâches."
           }
         ],
-       
+        
+  "skillsExtra": {
+    "frontend": [
+      "Implémenter une interface responsive et intégrer des maquettes en HTML / CSS",
+      "Développer des composants réutilisables avec React et gérer la navigation avec React Router",
+      "Intégrer une maquette graphique en HTML / CSS",
+      "Gérer les événements utilisateurs et manipuler le DOM avec JavaScript",
+      "Mettre en œuvre des animations CSS et développer avec Sass"
+    ],
+    "backend": [
+      "Intégrer des API REST pour afficher des données dynamiques",
+      "Réaliser des opérations CRUD",
+      "Stocker des données de manière sécurisée"
+    ],
+    "optimisation": [
+      "Optimiser les performances d'un site web",
+      "Déboguer un site grâce aux Chrome DevTools",
+      "Déployer un site statique en ligne",
+      "Rédiger un cahier de recette pour tester un site"
+    ],
+    "gestion": [
+      "Versionner un projet avec Git et GitHub",
+      "Découper une fonctionnalité en tâches (méthodes agiles)",
+      "Suivre le déroulement d'un projet avec un outil de gestion (Trello, Jira)",
+      "Rédiger les spécifications techniques et présenter une solution technique",
+      "Mettre en place une veille technologique"
+    ]
+  }
+},
+
          "projects": [
         {
             "title": "Booki",
@@ -171,7 +200,7 @@
       
     
 }
-}
+
 
       
       

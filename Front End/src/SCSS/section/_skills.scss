@@ -12,14 +12,71 @@
     width: 65vw;
 }
 
-.competences h2 {
-    font-size: 40px;
-}
-
 // Cartes pour les compétences
 .front-back-container {
     display: flex; 
 }
+
+// Stylisé les compétences techniques et pratiques 
+.skills-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: -100px;
+  margin-top: 30px;
+}
+
+.skills-left {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-right {
+  flex: 0.8;
+  text-align: left;
+}
+
+// Boutons des cartes techniques 
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 15px;
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background: #eee;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+      background: #ddd;
+    }
+
+    &.active {
+      background: #f9b7c4;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  }
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+// Cartes Front, Back, Outils
 
 .card-container {
     display: flex;
@@ -33,14 +90,18 @@
     width: 100%; 
 }
  
+.card-container .card {
+  flex: 0 1 220px;      
+}
+
 .card {
-    width: 200px;
+    width: 217px;
     height: 110px;
     perspective: 1000px;
     cursor: pointer;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
    
@@ -52,12 +113,14 @@
     top: 0;
     left: 0;
     transition: transform 0.6s;
-    border-radius: 8px;
+    display: flex;
+    
+    border-radius: 12px;
 }
     
 // Le devant de la carte
 .card-front {
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,8 +128,8 @@
     
 // L'arrière de la carte
 .card-back {
-    background-color: #a567a2;
-    color: white;
+  background: linear-gradient(135deg, #f7d4db, #f7c1ce);
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,10 +154,7 @@
     margin: auto;
 }
 
-.section h3 {
-    color: #333;
-    margin-bottom: 20px;
-}
+
 
 // Cartes pour les outils
 .tools-container {
@@ -119,7 +179,7 @@
 
 .card-icon i {
     font-size: 2rem;
-    color: #a567a2;
+    color: #f9b7c4;
 }
 
 .card-content {
@@ -137,11 +197,92 @@
     color: #666; 
 }
 
+// Compétences pratiques
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
 
+.skills-layout h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    font-weight: 300;
+}
 
+.practical-skills {
+  text-align: left;
 
+  ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+  }
 
+  li {
+    font-size: 1rem;
+    margin: 8px 0;
+    padding-left: 10px;
+  }
+}
 
+.faCheckCircle {
+  color: #f9b7c4;
+}
 
+// Soft Skills
+.soft-skills {
+  margin-top: 40px;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+.skills-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.badge {
+  background: #f9b7c4;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.skill-item {
+  display: flex;
+  align-items: flex-start; 
+  gap: 8px; 
+  margin-bottom: 8px;
+}
+
+.skill-item .faCheckCircle {
+  flex-shrink: 0; 
+  margin-top: 3px; 
+}
+
+.skill-item span {
+  flex: 1; 
+}
 
 

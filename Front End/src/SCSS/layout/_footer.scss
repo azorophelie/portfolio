@@ -1,5 +1,9 @@
 .footer {
-    background-color: #e6d4db ;
+   
+  background: radial-gradient(at 20% 20%, #ffe7f1, transparent 40%),
+              radial-gradient(at 80% 30%, #ffd5f3, transparent 40%),
+              radial-gradient(at 50% 80%, #f9b7c4, transparent 40%);
+  background-color: #fff;
     color: black;
     text-align: center;
     padding: 20px;
@@ -14,11 +18,11 @@
     font-size: 24px;
     margin: 0 10px;
     cursor: pointer;
-    color: #a567a2;
+    color: #faaebe;
   }
   
   .footer-icon:hover {
-    color: #b997b8; 
+    color: #fdcdd7; 
   }
   
   .footer-content p {

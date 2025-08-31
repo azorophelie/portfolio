@@ -12,7 +12,13 @@ const Presentation = () => {
   return (
   <div className="intro-container">
       <div className="introduction">
-        <h1>{presentationData.presentation.intro}</h1>
+  {presentationData.presentation.intro.split("\n").map((line, index) => (
+    <span key={index} className={index === 0 ? "intro-name" : "intro-job"}>
+      {line}
+    </span>
+  ))}
+
+
         <div className="intro-btn">
           {/* Bouton pour envoyer un e-mail */}
           <button
@@ -48,12 +54,17 @@ const Presentation = () => {
             className="profile-photo"
           />
           {/* Section pour la présentation personnelle avec des détails provenant du fichier JSON */}
-          <p>{presentationData.presentation.name}</p>
-          <p>{presentationData.presentation.age}</p>
-          <p>{presentationData.presentation.background}</p>
-          <p>{presentationData.presentation.mission}</p>
+      
+  
+  <p className="age">{presentationData.presentation.age}</p>
+   <div className="details">
+  <p className="background">{presentationData.presentation.background}</p>
+  <p className="mission">{presentationData.presentation.mission}</p>
+</div>
+
         </div>
       </section>
+      
     </div>
   );
 };

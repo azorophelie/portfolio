@@ -102,7 +102,7 @@ body {
   position: absolute;
   width: 0; 
   height: 2px; 
-  background-color: #a567a2; 
+  background-color: #f7acbb; 
   bottom: 0; 
   left: 0; 
   transition: width 0.3s ease-in-out; // Transition animé
@@ -110,7 +110,7 @@ body {
 
 // Couleur active pour les liens de navigation
 .navLinks a.active {
-  color: #a567a2;
+  color: #f7acbb;
 }
 
 .navLinks a.active::after {
@@ -119,7 +119,7 @@ body {
 
 // Changement de couleur au survol des liens
 .navLinks a:hover {
-  color: #a567a2;
+  color: #f7acbb;
 }
 
 .navLinks a:hover::after {
@@ -185,7 +185,7 @@ body {
   bottom: 40px; 
   right: 20px;  
   background-color: #f0f0f0;
-  color: #a567a2;
+  color: #faaebe;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
@@ -197,6 +197,6 @@ body {
 }
 
 .scroll:hover {
-  background-color: #b997b8; 
+  background-color: #fcedf0; 
 }
 
