@@ -30,7 +30,7 @@ const Presentation = () => {
           <button
             onClick={() => handleButtonClick("https://www.linkedin.com/in/ophelieazor/")}
           >
-            <i className="fab fa-github"></i> Linkedin
+            <i className="fab fa-linkedin"></i> Linkedin
           </button>
           {/* Bouton pour ouvrir le CV au format PDF */}
           <button onClick={() => handleButtonClick(cvPDF)}>

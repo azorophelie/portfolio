@@ -1495,12 +1495,19 @@ form button:hover {
   }
   .skills-left,
   .skills-right {
-    width: 125%;
+    width: 130%;
   }
   .tab-buttons button {
-    font-size: 0.8rem; /* plus petit (≈ 14px) */
+    font-size: 0.7rem; /* plus petit (≈ 14px) */
     padding: 6px 12px; /* réduit aussi l’espace */
     align-items: center;
+  }
+  .skills-layout h3,
+  .soft-skills h3 {
+    font-size: 15px;
+  }
+  .badge {
+    font-size: 10px;
   }
   .front-back-container {
     flex-direction: column;
@@ -1717,6 +1724,9 @@ form button:hover {
   }
   .skills-layout {
     flex-direction: column;
+  }
+  .tab-buttons button {
+    font-size: 1.7rem;
   }
   .skills-left,
   .skills-right {
