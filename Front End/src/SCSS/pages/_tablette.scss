@@ -80,6 +80,9 @@
       font-size: 35px; 
     }
 
+    .competences h2 {
+        margin-bottom: -5px;
+    }
     // Cartes de compétences 
     .front-back-container {
         flex-direction: column; 
@@ -97,11 +100,12 @@
   }
 
   .tab-buttons button {
-    font-size: 1.7rem;
+    font-size: 0.7rem;
   }
+  
    .skills-left,
   .skills-right {
-    width: 125%;
+    width: 100%;
   }
      // Cartes pour les projets
     .project-card {

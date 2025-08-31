@@ -1445,6 +1445,9 @@ form button:hover {
   .dark-mode-toggle {
     font-size: 16px;
   }
+  .competences h2 {
+    margin-bottom: -5px;
+  }
   .introduction {
     width: 100vw;
     margin: 0;
@@ -1495,7 +1498,7 @@ form button:hover {
   }
   .skills-left,
   .skills-right {
-    width: 130%;
+    width: 100%;
   }
   .tab-buttons button {
     font-size: 0.7rem; /* plus petit (≈ 14px) */
@@ -1714,6 +1717,9 @@ form button:hover {
   .contact h2 {
     font-size: 35px;
   }
+  .competences h2 {
+    margin-bottom: -5px;
+  }
   .front-back-container {
     flex-direction: column;
   }
@@ -1726,11 +1732,11 @@ form button:hover {
     flex-direction: column;
   }
   .tab-buttons button {
-    font-size: 1.7rem;
+    font-size: 0.7rem;
   }
   .skills-left,
   .skills-right {
-    width: 125%;
+    width: 100%;
   }
   .project-card {
     width: 100%;

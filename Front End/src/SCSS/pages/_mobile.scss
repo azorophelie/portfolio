@@ -79,6 +79,9 @@
         font-size: 16px;
       }
       
+      .competences h2 {
+        margin-bottom: -5px;
+    }
     // Introduction
       .introduction {
         width: 100vw; 
@@ -148,8 +151,9 @@
 
   .skills-left,
   .skills-right {
-    width: 130%;
+    width: 100%;
   }
+  
   .tab-buttons button {
   font-size: 0.7rem; /* plus petit (≈ 14px) */
   padding: 6px 12px;  /* réduit aussi l’espace */
