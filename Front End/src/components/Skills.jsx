@@ -10,6 +10,7 @@ const [activePracticeTab, setActivePracticeTab] = useState("frontend");
 
 
   const renderSkills = (skills) => (
+    
     <div className="card-container">
       {skills.map((skill, index) => (
          <motion.div

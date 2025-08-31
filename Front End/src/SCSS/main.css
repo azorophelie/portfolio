@@ -848,12 +848,9 @@ h2::after {
 
 .skills-layout {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  width: 100%;
-  max-width: 1200px;
-  margin-left: -100px;
+  max-width: 100vw;
   margin-top: 30px;
 }
 
@@ -1496,11 +1493,6 @@ form button:hover {
   .skills-layout {
     flex-direction: column;
   }
-  .skills-left,
-  .skills-right {
-    align-items: center;
-    width: 80vw;
-  }
   .tab-buttons button {
     font-size: 0.7rem; /* plus petit (≈ 14px) */
     padding: 6px 12px; /* réduit aussi l’espace */
@@ -1724,21 +1716,25 @@ form button:hover {
   .front-back-container {
     flex-direction: column;
   }
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+  .card-container .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
   }
   .skills-layout {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .tab-buttons button {
     font-size: 0.7rem;
   }
   .skills-left,
   .skills-right {
-    align-items: center;
-    width: 80vw;
+    flex: 1;
+    max-width: 500px;
   }
   .project-card {
     width: 100%;

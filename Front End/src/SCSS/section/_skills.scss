@@ -20,12 +20,12 @@
 // Stylisé les compétences techniques et pratiques 
 .skills-layout {
   display: flex;
-  justify-content: space-between;
+  
   align-items: flex-start;
   gap: 40px;
-  width: 100%;
-  max-width: 1200px;
-  margin-left: -100px;
+  
+  max-width: 100vw;
+  
   margin-top: 30px;
 }
 
@@ -211,6 +211,7 @@
     color: #333;
     text-align: center;
     font-weight: 300;
+    
 }
 
 .practical-skills {
