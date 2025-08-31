@@ -1499,7 +1499,7 @@ form button:hover {
   .skills-left,
   .skills-right {
     align-items: center;
-    width: 80vw;
+    width: 100vw;
   }
   .tab-buttons button {
     font-size: 0.7rem; /* plus petit (≈ 14px) */
