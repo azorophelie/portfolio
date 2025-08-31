@@ -105,7 +105,8 @@
   
    .skills-left,
   .skills-right {
-    width: 100%;
+    align-items: center; 
+        width: 80vw; 
   }
      // Cartes pour les projets
     .project-card {
