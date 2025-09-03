@@ -29,6 +29,9 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Empêche le rechargement par défaut de la page
 
+      console.log("SERVICE:", process.env.REACT_APP_SERVICE_ID);
+  console.log("TEMPLATE:", process.env.REACT_APP_TEMPLATE_ID);
+  console.log("KEY:", process.env.REACT_APP_PUBLIC_KEY);
     // Utilisation de EmailJS pour envoyer l'email
     emailjs
       .send(
