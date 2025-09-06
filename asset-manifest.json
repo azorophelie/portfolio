@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.47f12367.css",
+    "main.css": "/portfolio/static/css/main.78876eab.css",
     "main.js": "/portfolio/static/js/main.92659d91.js",
     "static/js/206.4644f2ac.chunk.js": "/portfolio/static/js/206.4644f2ac.chunk.js",
     "static/media/Bluel_vid.mp4": "/portfolio/static/media/Bluel_vid.2a03491a463ef38f80bb.mp4",
@@ -22,7 +22,7 @@
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.47f12367.css",
+    "static/css/main.78876eab.css",
     "static/js/main.92659d91.js"
   ]
 }
