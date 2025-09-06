@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "react-router-dom";
+import { Menu, X } from "lucide-react"; // 👈 Icônes modernes
 
 const Header = () => {
   const [showName, setShowName] = useState(true); // État pour afficher ou masquer le nom
@@ -27,14 +28,6 @@ const Header = () => {
       document.body.classList.remove("dark-mode");
     }
   };
-
-  // Fonction pour ouvrir/fermer le menu burger
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  
-  
 
   // useEffect pour ajouter et retirer l'événement de scroll
   useEffect(() => {
@@ -90,57 +83,59 @@ const Header = () => {
         </div>
 
         {/* Menu Burger pour version mobile */}
-        <div
-          className={`burger-icon ${menuOpen ? "open" : ""} ${darkMode ? "dark-mode" : "light-mode"}`}
-          onClick={toggleMenu}
-        >
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
-        </div>
+       <button onClick={() => setMenuOpen(!menuOpen)} className="menu-btn">
+  {menuOpen ? <X size={32} /> : <Menu size={32} />}
+</button>
 
-        {/* Menu Mobile */}
-        <ul className={`navLinks ${menuOpen ? "open" : ""}`}>
-          {/* Liens de navigations pour le menu */}
-          <li>
-            <a
-              href="#presentation"
-              className={`lien-header ${activeLink === "presentation" ? "active" : ""}`}
-              onClick={() => setActiveLink("presentation")}
-            >
-              Présentation
-            </a>
-          </li>
-          <li>
-            <a
-              href="#competences"
-              className={`lien-header ${activeLink === "competences" ? "active" : ""}`}
-              onClick={() => setActiveLink("competences")}
-            >
-              Mes Compétences
-            </a>
-          </li>
-          <li>
-            <a
-              href="#projects"
-              className={`lien-header ${activeLink === "projects" ? "active" : ""}`}
-              onClick={() => setActiveLink("projects")}
-            >
-              Mes Projets
-            </a>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className={`lien-header ${activeLink === "contact" ? "active" : ""}`}
-              onClick={() => setActiveLink("contact")}
-            >
-              {" "}
-              Contact
-            </a>
-          </li>
-        </ul>
       </nav>
+
+      {/* Overlay plein écran */}
+      {menuOpen && (
+        <div className="overlay">
+            <button onClick={() => setMenuOpen(false)} className="close-btn">
+      <X size={32} />
+    </button>
+          <ul className="overlay-menu">
+            <li>
+              <a
+                href="#presentation"
+                className={activeLink === "presentation" ? "active" : ""}
+                onClick={() => { setActiveLink("presentation"); setMenuOpen(false); }}
+              >
+                Présentation
+              </a>
+            </li>
+            <li>
+              <a
+                href="#competences"
+                className={activeLink === "competences" ? "active" : ""}
+                onClick={() => { setActiveLink("competences"); setMenuOpen(false); }}
+              >
+                Compétences
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className={activeLink === "projects" ? "active" : ""}
+                onClick={() => { setActiveLink("projects"); setMenuOpen(false); }}
+              >
+                Projets
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className={activeLink === "contact" ? "active" : ""}
+                onClick={() => { setActiveLink("contact"); setMenuOpen(false); }}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+          </div>
+        )}
+        
     </header>
   );
 };

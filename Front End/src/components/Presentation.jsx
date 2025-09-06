@@ -1,7 +1,7 @@
 import React from "react";
 import presentationData from "../data/details.json"; // Importation des données de présentation à partir d'un fichier JSON
 import myselfPhoto from "../images/me.webp";
-import cvPDF from "../images/cv_ophelie_azor.pdf";
+import cvPDF from "../images/CV-AzorOphelie.pdf";
 
 // Fonction pour gérer les clics sur les boutons et ouvrir un lien dans un nouvel onglet
 const handleButtonClick = (url) => {

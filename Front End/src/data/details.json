@@ -12,8 +12,8 @@
         "location": "Valenciennes, Hauts-de-France", 
         "year": "Du 12 Avril 2023 au 5 Juin 2023",
         "description": "Cette formation de préqualification a pour objectif de découvrir les métiers liés à l’intégration web et d’initier le développement des compétences nécessaires à la réalisation des principales activités de le⋅a développeur·se intégrateur·rice. ",
-      "duration": "3 mois",
-        "link": "https://www.simplon.co/session/hdf-lille-devinte-p7"
+      "duration": "2 mois"
+     
       },
       {
         "title": "Développeur Web",
@@ -135,18 +135,24 @@
          "projects": [
         {
             "title": "Booki",
+            "category": "front-End",
             "description": "\nSite web développé pour une agence de voyage, conçu pour faciliter la réservation d'hébergements et d'activités dans la ville de choix des utilisateurs. \n",
            "problems": [
     "\n• Intégration d'une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
    ],
             "solutions": "\n• Écriture de code HTML et CSS personnalisé en suivant les maquettes \n• collaboration étroite avec l’UI designer.",
             "skillsDeveloped": "\nHTML, CSS, design responsive, versionnement avec Git.\n\n",
-            "github": "https://github.com/azorophelie/OpenClassrooms-Projet-2",
-            "githubPages": "https://azorophelie.github.io/OpenClassrooms-Projet-2/",
+            "github": "https://github.com/azorophelie/Booki",
+             "deploy": {
+            "service": "GitHub Pages",
+            "url": "https://azorophelie.github.io/Booki/",
+          
             "spaceAfterskillsDeveloped": true 
+             }
         },
         {
-            "title": "Bluel",
+            "title": "Sophie Bluel",
+            "category": ["front-End", "back-End", "API"],
             "description": "\nSite portfolio pour une architecte d'intèrieur .\n\n",
             "problems": [
                 "\n• Difficulté à récupérer les travaux de l'architecte à partir du back-end en utilisant l'API.",
@@ -158,10 +164,11 @@
          "\n• Envoyer une requête DELETE à l'API et mettre à jour le DOM en conséquence."
           ],
             "skillsDeveloped": "\nJavaScript, gestion du DOM, utilisation des API REST, travail avec Figma.",
-            "github": "https://github.com/azorophelie/OpenClassrooms-Projet-3"
+            "github": "https://github.com/azorophelie/Sophie-Bluel"
         },
         {
           "title": "Kasa",
+          "category": "front-End",
           "description": "\nRefonte du site Kasa, une entreprise de location d’appartements entre particuliers, visant à passer d'une architecture ASP.NET à une stack JavaScript avec NodeJS et React.",
           "problems": [
             "\n• Difficulté à gérer les données des annonces.",
@@ -175,11 +182,15 @@
     ],
         
           "skillsDeveloped": "\nJavaScript, React, React Router, Sass.\n\n\n\n",
-          "github": "https://github.com/azorophelie/OpenClassrooms-Projet-5",
-          "githubPages": "https://azorophelie.github.io/OpenClassrooms-Projet-5/"
+          "github": "https://github.com/azorophelie/Kasa",
+           "deploy": {
+          "service": "GitHub Pages",
+          "url": "https://azorophelie.github.io/Kasa"
+           }
       },
       {
           "title": "Mon Vieux Grimoire",
+          "category": ["back-End", "API"],
           "description": "\nSite web de notation de livres pour la chaîne de librairies 'Le Vieux Grimoire'. Permet aux utilisateurs d'ajouter des livres et de laisser des notes, tout en optimisant les images pour une expérience utilisateur fluide.",
 
           "problems": [
@@ -194,8 +205,68 @@
           "\n• Optimiser les images téléchargées pour réduire l'empreinte écologique du site."
           ],
           "skillsDeveloped": "\nNode.js, Express, MongoDB, Mongoose, gestion des opérations CRUD, sécurisation des données, optimisation des images, architecture MVC.\n\n\n",
-          "github": "https://github.com/azorophelie/OpenClassrooms_Projet_6"
-      }
+          "github": "https://github.com/azorophelie/Mon-Vieux-Grimoire"
+      },
+{
+      "title": "Nina Carducci",
+      "category": "SEO",
+      "description": "\nOptimisation d'un site web existant pour améliorer les performances, le SEO, l'accessibilité et corriger les bugs de la galerie",
+
+      "problems": [
+        "\n• Navigation dans la modale de la galerie défaillante",
+        "\n• Site lent et peu performant",
+        "\n• Images trop lourdes et codes peu optimisé",
+        "\n• SEO et référencement local insuffisants"
+      ],
+      "solutions": [
+        "\n• Optimisation des images, CSS, et JS pour un chargement rapide",
+        "\n• Correction de la navigation modale et du filtre actif",
+        "\n• Ajout de balises meta et Schema.org pour le référencement local et réseaux sociaux",
+        "\n• Amélioration de l’accessibilité et audit complet avec Lighthouse"
+      ],
+      "skillsDeveloped": "\n HTML, CSS, SEO, accesibilité, optimisation des performances audit LightHouse, GitHub Pages",
+      "github": "https://github.com/azorophelie/Nina-Carducci",
+       "deploy": {
+    "service": "GitHub Pages",
+      "url": "https://azorophelie.github.io/Nina-Carducci/"
+       }
+},
+
+{
+  "title": "Application Météo",
+  "category": ["front-End", "API"],
+  "description": "\nApplication météo dynamique affichant la météo actuelle d'une ville avec interface jour/nuit et effets visuels.",
+
+  "problems": [
+    "\n• Données API parfois manquantes ou incorrectes",
+    "\n• Interface jour/nuit à adapter dynamiquement",
+    "\n• Animations nuages/étoiles pouvant ralentir le site",
+    "\n• Géolocalisation refusée ou indisponible",
+    "\n• Affichage lisible de toutes les informations météo"
+  ],
+
+  "solutions": [
+    "\n• Récupération et traitement des données API avec JavaScript",
+    "\n• Styles et effets adaptés au jour et à la nuit",
+    "\n• Animations optimisées pour ne pas ralentir l'app",
+    "\n• Fallback sur ville par défaut si géolocalisation refusée",
+    "\n• Affichage dynamique et responsive des infos météo"
+  ],
+    "skillsDeveloped": "\nHTML, CSS, JavaScript, API REST, DOM, géolocalisation, UI dynamique",
+    "github": "https://github.com/azorophelie/Weather_App?tab=readme-ov-file",
+    "deploy": {
+    "service": "Netlify",
+    "url": "https://weatherapp-roza.netlify.app/"
+    }
+},
+
+{
+  "title": "Mon Nouveau Projet",
+  "category": ["en cours"],
+  "description": "\n Projet en cours de développement, fonctionnalités principales à venir.",
+  "summary": "\nCe projet présente mes voyages à travers des galeries photos, cartes interactives et descriptions. L'utilisateur peut naviguer par destination et découvrir les expériences vécues.",
+  "github": "https://github.com/azorophelie/Blog"
+}
   ]
       
     

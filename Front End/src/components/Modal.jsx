@@ -20,37 +20,61 @@ const Modal = ({ isOpen, onClose, project }) => {
           &times;
         </span>
 
-        <h3>{project.title}</h3>
+        <h3 className="modal-title">{project.title}</h3>
         {/* Afficher le projet qui contient une vidéo dans un lecteur vidéo */}
-        {project.video && (
-          <div className="modal-video-container">
-            <video
-              src={project.video} // Source de la vidéo du projet
-              autoPlay // Lecture automatique
-              loop // Boucle infinie
-              muted // Désactiver le son
-              playsInline // Lecture dans le navigateur
-              className="modal-video"
-            />
-          </div>
-        )}
+    {project.video && (
+  <div className="modal-video-container">
+    <video
+      src={project.video}
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="modal-video"
+    />
+    
+    {/* Overlay uniquement sur la vidéo */}
+    {project.category?.includes("en cours") && (
+      <div className="video-overlay">
+        <span className="overlay-text">En cours</span>
+      </div>
+    )}
+  </div>
+)}
+
+
         {/* Section avec les détails du projet, divisée en deux colonnes */}
         <div className="modal-details">
-          <div className="modal-column">
-            <p className="modal-description">Description:</p>
-            <p className="text-modal">{project.description}</p>
+  <div className="modal-column">
+    <p className="modal-description">Description:</p>
+    <p className="text-modal">{project.description}</p>
 
-            <p className="modal-description">Problématiques:</p>
-            <p className="text-modal">{project.problems}</p>
-          </div>
-          <div className="modal-column">
-            <p className="modal-description">Compétences développées:</p>
-            <p className="text-modal">{project.skillsDeveloped}</p>
+    {project.category.includes("en cours") ? (
+      <>
+        <p className="modal-description">Résumé:</p>
+        <p className="text-modal">{project.summary}</p>
+      </>
+    ) : (
+      <>
+        <p className="modal-description">Problématiques:</p>
+        <p className="text-modal">{project.problems}</p>
+      </>
+    )}
+  </div>
 
-            <p className="modal-description">Solutions:</p>
-            <p className="text-modal">{project.solutions}</p>
-          </div>
-        </div>
+  <div className="modal-column">
+    <p className="modal-description">Compétences développées:</p>
+    <p className="text-modal">{project.skillsDeveloped}</p>
+
+    {!project.category.includes("en cours") && (
+      <>
+        <p className="modal-description">Solutions:</p>
+        <p className="text-modal">{project.solutions}</p>
+      </>
+    )}
+  </div>
+</div>
+
         {/* Boutons permettant de consulter le code GitHub ou la page GitHub du projet */}
          {/* Boutons avec icônes */}
          <div className="modal-buttons">
@@ -64,18 +88,18 @@ const Modal = ({ isOpen, onClose, project }) => {
             <FontAwesomeIcon icon={faGithub} className="modal-icon" />
             <span className="text-btn">Code GitHub</span>
           </a>
-          {project.githubPages ? (
-            <a
-              href={project.githubPages}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="projet-btn"
-            >
-              {/* Icône GitHub Pages */}
-              <FontAwesomeIcon icon={faFileAlt}  className="modal-icon"/>
-              <span className="text-btn">GitHub Pages</span>
-            </a>
-) : null}
+          {project.deploy && ( 
+  <a
+    href={project.deploy.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="projet-btn"
+  >
+    <FontAwesomeIcon icon={faFileAlt} className="modal-icon" />
+    <span className="text-btn">Pages</span>
+  </a>
+)}
+
         </div>
       </div>
     </div>
