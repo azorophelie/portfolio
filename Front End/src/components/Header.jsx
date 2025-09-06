@@ -82,6 +82,47 @@ const Header = () => {
 </button>
         </div>
 
+<ul className="navLinks desktop-menu">
+  <li>
+              <a
+                href="#presentation"
+                className={activeLink === "presentation" ? "active" : ""}
+                onClick={() => { setActiveLink("presentation"); setMenuOpen(false); }}
+              >
+                Présentation
+              </a>
+            </li>
+            <li>
+              <a
+                href="#competences"
+                className={activeLink === "competences" ? "active" : ""}
+                onClick={() => { setActiveLink("competences"); setMenuOpen(false); }}
+              >
+                Compétences
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className={activeLink === "projects" ? "active" : ""}
+                onClick={() => { setActiveLink("projects"); setMenuOpen(false); }}
+              >
+                Projets
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                className={activeLink === "contact" ? "active" : ""}
+                onClick={() => { setActiveLink("contact"); setMenuOpen(false); }}
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+
+
         {/* Menu Burger pour version mobile */}
        <button onClick={() => setMenuOpen(!menuOpen)} className="menu-btn">
   {menuOpen ? <X size={32} /> : <Menu size={32} />}

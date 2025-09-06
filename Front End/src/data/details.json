@@ -135,7 +135,7 @@
          "projects": [
         {
             "title": "Booki",
-            "category": "front-End",
+            "category": "front",
             "description": "\nSite web développé pour une agence de voyage, conçu pour faciliter la réservation d'hébergements et d'activités dans la ville de choix des utilisateurs. \n",
            "problems": [
     "\n• Intégration d'une interface responsive basée sur des maquettes Figma pour mobile, tablette et desktop."
@@ -152,7 +152,7 @@
         },
         {
             "title": "Sophie Bluel",
-            "category": ["front-End", "back-End", "API"],
+            "category": ["front", "back", "API"],
             "description": "\nSite portfolio pour une architecte d'intèrieur .\n\n",
             "problems": [
                 "\n• Difficulté à récupérer les travaux de l'architecte à partir du back-end en utilisant l'API.",
@@ -168,7 +168,7 @@
         },
         {
           "title": "Kasa",
-          "category": "front-End",
+          "category": "front",
           "description": "\nRefonte du site Kasa, une entreprise de location d’appartements entre particuliers, visant à passer d'une architecture ASP.NET à une stack JavaScript avec NodeJS et React.",
           "problems": [
             "\n• Difficulté à gérer les données des annonces.",
@@ -190,7 +190,7 @@
       },
       {
           "title": "Mon Vieux Grimoire",
-          "category": ["back-End", "API"],
+          "category": ["back", "API"],
           "description": "\nSite web de notation de livres pour la chaîne de librairies 'Le Vieux Grimoire'. Permet aux utilisateurs d'ajouter des livres et de laisser des notes, tout en optimisant les images pour une expérience utilisateur fluide.",
 
           "problems": [
@@ -234,7 +234,7 @@
 
 {
   "title": "Application Météo",
-  "category": ["front-End", "API"],
+  "category": ["front", "API"],
   "description": "\nApplication météo dynamique affichant la météo actuelle d'une ville avec interface jour/nuit et effets visuels.",
 
   "problems": [

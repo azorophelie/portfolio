@@ -29,7 +29,7 @@ const media = {
 };
 
 const ProjectCard = ({ projects, onProjectClick }) => {
-  const [activeTab, setActiveTab] = useState("front-End");
+  const [activeTab, setActiveTab] = useState("front");
 
   
 
@@ -45,7 +45,7 @@ const filteredProjects =
     <div>
       {/* Boutons de filtre */}
       <div className="tab-buttons">
-  {["all", "front-End", "back-End", "API", "SEO", "en cours"].map((tab) => (
+  {["all", "front", "back", "API", "SEO", "en cours"].map((tab) => (
     <button
       key={tab}
       className={activeTab === tab ? "active" : ""}

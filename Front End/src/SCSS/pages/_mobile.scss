@@ -15,6 +15,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        color: black;
+      
+  &:hover {
+    transform: scale(1.1); // effet zoom léger
+    color: #f7acbb; // couleur rose au survol
+  }
       }
 
       .overlay {
@@ -49,7 +55,7 @@
 
       .overlay-menu a:hover,
       .overlay-menu .active {
-        color: #f472b6; 
+        color: #f7acbb; 
       }
 
       .close-btn {
@@ -64,7 +70,7 @@
       }
 
       .close-btn:hover {
-        color: #f472b6
+        color: #f7acbb
       }
 
     // Header
@@ -208,9 +214,11 @@
   
   
   .tab-buttons button {
-  font-size: 0.7rem; /* plus petit (≈ 14px) */
+  font-size: 0.6rem; /* plus petit (≈ 14px) */
   padding: 6px 12px;  /* réduit aussi l’espace */
+  color: black;
   align-items: center;
+  
 }
 
 .skills-layout h3,
@@ -264,7 +272,7 @@
 
       .project-card {
         width: 80vw;
-        height: auto; 
+        height: 30vh; 
       }
 
     // Ouverture de Modale
@@ -387,12 +395,32 @@
         background-color: #121212;
       }
 
+      .dark-mode .menu-btn {
+        color: white;
+
+         &:hover {
+          transform: scale(1.1); 
+          color: #7a4e61; 
+        }
+      }
       .dark-mode .burger-icon:hover {
         transform: scale(1.05);
       }
 
       .dark-mode .modal-icon {
         color: #555;
+      }
+      
+      .dark-mode .overlay-menu a:hover {
+        color: #7a4e61;
+      }
+
+      .dark-mode .overlay-menu a.active {
+        color: #613c4c;
+      }
+
+      .dark-mode .close-btn:hover {
+        color: #7a4e61;
       }
 }
     
