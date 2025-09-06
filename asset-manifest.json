@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d1b4d19e.css",
-    "main.js": "/portfolio/static/js/main.079c5c64.js",
-    "static/js/453.32bc8d24.chunk.js": "/portfolio/static/js/453.32bc8d24.chunk.js",
+    "main.css": "/portfolio/static/css/main.e8b0dee2.css",
+    "main.js": "/portfolio/static/js/main.344230d0.js",
+    "static/js/206.4644f2ac.chunk.js": "/portfolio/static/js/206.4644f2ac.chunk.js",
     "static/media/Bluel_vid.mp4": "/portfolio/static/media/Bluel_vid.2a03491a463ef38f80bb.mp4",
     "static/media/Grimoire_vid.mp4": "/portfolio/static/media/Grimoire_vid.6690cb85821f59a67128.mp4",
     "static/media/Kasa_vid.mp4": "/portfolio/static/media/Kasa_vid.e8b0225392d0ca659c0d.mp4",
     "static/media/Booki_vid.mp4": "/portfolio/static/media/Booki_vid.66b4a6866f7121247c7d.mp4",
+    "static/media/Nina_vid.mp4": "/portfolio/static/media/Nina_vid.679d7bf2b1a9240fcff3.mp4",
+    "static/media/projet-avenir.mp4": "/portfolio/static/media/projet-avenir.479791c1b67c06f05493.mp4",
+    "static/media/meteo_video.mp4": "/portfolio/static/media/meteo_video.5b37036529626e20f026.mp4",
+    "static/media/Nina-Carducci.webp": "/portfolio/static/media/Nina-Carducci.bc362a0c4458ccea618f.webp",
     "static/media/Kasa_Projet_5.webp": "/portfolio/static/media/Kasa_Projet_5.7fdecd7c8cbace4f414d.webp",
     "static/media/Vieux_Grimoire.webp": "/portfolio/static/media/Vieux_Grimoire.e5b3cbc8e00c23bb52af.webp",
     "static/media/Booki_Projet_2.webp": "/portfolio/static/media/Booki_Projet_2.e0ffd4e3ab596c450c3a.webp",
-    "static/media/cv_ophelie_azor.pdf": "/portfolio/static/media/cv_ophelie_azor.95e2953ead96fb8dcc64.pdf",
+    "static/media/CV-AzorOphelie.pdf": "/portfolio/static/media/CV-AzorOphelie.09340708b65dd4d7de47.pdf",
     "static/media/Bluel_Projet_3.webp": "/portfolio/static/media/Bluel_Projet_3.c117553895df743b7fb4.webp",
     "static/media/me.webp": "/portfolio/static/media/me.f0c85c34ff80234282cc.webp",
-    "index.html": "/portfolio/index.html",
-    "main.d1b4d19e.css.map": "/portfolio/static/css/main.d1b4d19e.css.map",
-    "main.079c5c64.js.map": "/portfolio/static/js/main.079c5c64.js.map",
-    "453.32bc8d24.chunk.js.map": "/portfolio/static/js/453.32bc8d24.chunk.js.map"
+    "static/media/encours.webp": "/portfolio/static/media/encours.36dfa9c2af2ab05e79d4.webp",
+    "static/media/meteo.webp": "/portfolio/static/media/meteo.05dcc34cf97311c86dcc.webp",
+    "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.d1b4d19e.css",
-    "static/js/main.079c5c64.js"
+    "static/css/main.e8b0dee2.css",
+    "static/js/main.344230d0.js"
   ]
 }
