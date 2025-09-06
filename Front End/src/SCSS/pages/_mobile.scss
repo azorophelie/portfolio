@@ -306,15 +306,15 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 40px;
-          height: 40px;
+          width: 100px;
+          height: 20px;
           background-color: transparent;
           border: none;
           text-decoration: none;
   
         &:hover {
           background-color: #b997b8;
-          width: 50px;
+          width: 100px;
         }
     
         svg {
@@ -351,21 +351,22 @@
       }
 
       .modal-close {
-        padding-top: 2px;
-        padding-right: 5px;
+        padding-top: 22px;
+        padding-right: 13px;
       }
 
       .modal-buttons .text-btn {
-        color: black;
-        padding-left: 10px;
+        display: none;
       }
   
       .modal-buttons .modal-icon {
-        font-size: 30px; 
+        font-size: 25px; 
         display: flex;
         justify-content: center;
         align-items: center;
+        color: white;
       }
+
 
     // Formulaire de Contact
       form {
@@ -412,7 +413,7 @@
       }
 
       .dark-mode .modal-icon {
-        color: #555;
+        color: white;
       }
       
       .dark-mode .overlay-menu a:hover {
