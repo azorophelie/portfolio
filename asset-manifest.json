@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e8b0dee2.css",
-    "main.js": "/portfolio/static/js/main.344230d0.js",
+    "main.css": "/portfolio/static/css/main.7a895da1.css",
+    "main.js": "/portfolio/static/js/main.53d2624e.js",
     "static/js/206.4644f2ac.chunk.js": "/portfolio/static/js/206.4644f2ac.chunk.js",
     "static/media/Bluel_vid.mp4": "/portfolio/static/media/Bluel_vid.2a03491a463ef38f80bb.mp4",
     "static/media/Grimoire_vid.mp4": "/portfolio/static/media/Grimoire_vid.6690cb85821f59a67128.mp4",
@@ -22,7 +22,7 @@
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.e8b0dee2.css",
-    "static/js/main.344230d0.js"
+    "static/css/main.7a895da1.css",
+    "static/js/main.53d2624e.js"
   ]
 }
