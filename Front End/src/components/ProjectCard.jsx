@@ -44,7 +44,7 @@ const filteredProjects =
   return (
     <div>
       {/* Boutons de filtre */}
-      <div className="tab-buttons">
+      <div className="tab-buttons project-button ">
   {["all", "front", "back", "API", "SEO", "en cours"].map((tab) => (
     <button
       key={tab}
